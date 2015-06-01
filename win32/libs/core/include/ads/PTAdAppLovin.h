@@ -1,0 +1,18 @@
+#ifndef PTADAPPLOVIN_H
+#define PTADAPPLOVIN_H
+
+#include "ads/PTAdObject.h"
+
+class PTAdAppLovin : public PTAdObject
+{
+public:
+    PTAdAppLovin();
+    virtual ~PTAdAppLovin();
+    static PTAdAppLovin* shared();
+    virtual void initAdNetork();
+    virtual void showInterstitial();
+    virtual void showBanner();
+    virtual void hideBanner();
+};
+
+#endif // PTADAPPLOVIN_H

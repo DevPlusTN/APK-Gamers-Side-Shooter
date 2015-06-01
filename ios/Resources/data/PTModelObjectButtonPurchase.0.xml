@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>ROOT</key>
+        <array>
+            <dict>
+                <key>id</key>
+                <string>276</string>
+                <key>className</key>
+                <string>PTModelObjectButtonPurchase</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Remove Ads</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{568.000,90.000}</string>
+                </dict>
+                <key>Image</key>
+                <dict>
+                    <key>value</key>
+                    <string>274</string>
+                </dict>
+                <key>Powerup Selection</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>selectedStringValue</key>
+                    <string></string>
+                </dict>
+                <key>Keyboard Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kPurchaseRemoveAds</string>
+                </dict>
+                <key>Buy And Use</key>
+                <dict>
+                    <key>value</key>
+                    <string>1</string>
+                </dict>
+                <key>Quantity</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>0.000000</string>
+                </dict>
+                <key>Price</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.990000</string>
+                </dict>
+                <key>In App Purchase</key>
+                <dict>
+                    <key>value</key>
+                    <string>1</string>
+                </dict>
+                <key>Store Identifier</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>zDepth</key>
+                <string>1</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>320</string>
+                <key>className</key>
+                <string>PTModelObjectButtonPurchase</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Remove Ads</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{568.000,90.000}</string>
+                </dict>
+                <key>Scale</key>
+                <dict>
+                    <key>value</key>
+                    <string>{0.750,0.750}</string>
+                </dict>
+                <key>Image</key>
+                <dict>
+                    <key>value</key>
+                    <string>318</string>
+                </dict>
+                <key>Powerup Selection</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>selectedStringValue</key>
+                    <string></string>
+                </dict>
+                <key>Keyboard Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Block Touch</key>
+                <dict>
+                    <key>value</key>
+                    <string>0</string>
+                </dict>
+                <key>Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kPurchaseRemoveAds</string>
+                </dict>
+                <key>Buy And Use</key>
+                <dict>
+                    <key>value</key>
+                    <string>1</string>
+                </dict>
+                <key>Quantity</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>0.000000</string>
+                </dict>
+                <key>Price</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.990000</string>
+                </dict>
+                <key>In App Purchase</key>
+                <dict>
+                    <key>value</key>
+                    <string>1</string>
+                </dict>
+                <key>Store Identifier</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>zDepth</key>
+                <string>2</string>
+            </dict>
+        </array>
+    </dict>
+</plist>

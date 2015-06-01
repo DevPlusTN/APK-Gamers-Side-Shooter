@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>ROOT</key>
+        <array>
+            <dict>
+                <key>id</key>
+                <string>526</string>
+                <key>className</key>
+                <string>PTModelAssetObstacle</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>bullet-A</string>
+                </dict>
+                <key>Collision Shape</key>
+                <dict>
+                    <key>id</key>
+                    <string>527</string>
+                    <key>className</key>
+                    <string>PTModelPolygon</string>
+                    <key>points</key>
+                    <array>
+                        <string>{-156.000000,-74.000000}</string>
+                        <string>{154.000000,-74.000000}</string>
+                        <string>{154.000000,74.000000}</string>
+                        <string>{-156.000000,74.000000}</string>
+                    </array>
+                    <key>oneWayCollisionVector</key>
+                    <string>{0.000000,0.000000}</string>
+                    <key>shapeType</key>
+                    <string>1</string>
+                </dict>
+                <key>Idle Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>528</string>
+                </dict>
+                <key>Damage</key>
+                <dict>
+                    <key>value</key>
+                    <string>25.000000</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>618</string>
+                <key>className</key>
+                <string>PTModelAssetObstacle</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>ADK Enemy</string>
+                </dict>
+                <key>Collision Shape</key>
+                <dict>
+                    <key>id</key>
+                    <string>619</string>
+                    <key>className</key>
+                    <string>PTModelPolygon</string>
+                    <key>points</key>
+                    <array>
+                        <string>{-67.000000,-77.000000}</string>
+                        <string>{77.000000,-77.000000}</string>
+                        <string>{77.000000,84.000000}</string>
+                        <string>{-67.000000,84.000000}</string>
+                    </array>
+                    <key>oneWayCollisionVector</key>
+                    <string>{0.000000,0.000000}</string>
+                    <key>shapeType</key>
+                    <string>1</string>
+                </dict>
+                <key>Idle Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>620</string>
+                </dict>
+                <key>Defeated Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>792</string>
+                </dict>
+                <key>Death Sound</key>
+                <dict>
+                    <key>value</key>
+                    <string>798</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
