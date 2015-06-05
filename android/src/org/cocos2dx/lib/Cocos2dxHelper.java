@@ -74,6 +74,8 @@ public class Cocos2dxHelper {
 		Cocos2dxHelper.sCocos2dMusic = new Cocos2dxMusic(pContext);
 		Cocos2dxHelper.sCocos2dSound = new Cocos2dxSound(pContext);
 		Cocos2dxHelper.sAssetManager = pContext.getAssets();
+		Cocos2dxHelper.nativeSetContext((Context)pContext, Cocos2dxHelper.sAssetManager);
+		
 		Cocos2dxBitmap.setContext(pContext);
 		Cocos2dxETCLoader.setContext(pContext);
 	}
@@ -93,6 +95,8 @@ public class Cocos2dxHelper {
 	private static native void nativeSetApkPath(final String pApkPath);
 
 	private static native void nativeSetEditTextDialogResult(final byte[] pBytes);
+
+	private static native void nativeSetContext(final Context pContext, final AssetManager pAssetManager);
 
 	public static String getCocos2dxPackageName() {
 		return Cocos2dxHelper.sPackageName;
@@ -174,7 +178,7 @@ public class Cocos2dxHelper {
 	}
 
 	public static int playEffect(final String path, final boolean isLoop) {
-		return Cocos2dxHelper.sCocos2dSound.playEffect(path, isLoop);
+		return Cocos2dxHelper.sCocos2dSound.playEffect(path, isLoop, 1, 0, 1);
 	}
 
 	public static void resumeEffect(final int soundId) {

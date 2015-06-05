@@ -12,6 +12,9 @@ public class PTAdRevMobBridge {
 	public static void showFullScreen(){
 	}
 
+	public static void showPopup(){
+	}
+
 	public static void showBannerAd(){
 	}
 

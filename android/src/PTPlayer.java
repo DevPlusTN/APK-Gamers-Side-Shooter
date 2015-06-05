@@ -2,20 +2,12 @@ package ;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.Toast;
-
 import com.secrethq.store.PTStoreBridge;
-
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.games.GamesActivityResultCodes;
 
 import com.secrethq.ads.*;
@@ -68,8 +60,8 @@ public class PTPlayer extends Cocos2dxActivity {
 		if (PTJniHelper.isAdNetworkActive("kRevMob")) {
 			PTAdRevMobBridge.initBridge(this);
 		}
-
-		if (PTJniHelper.isAdNetworkActive("kAdMob")) {
+		
+		if (PTJniHelper.isAdNetworkActive("kAdMob") || PTJniHelper.isAdNetworkActive("kFacebook")) {
 			PTAdAdMobBridge.initBridge(this);
 		}
 
@@ -92,6 +84,11 @@ public class PTPlayer extends Cocos2dxActivity {
 		if (PTJniHelper.isAdNetworkActive("kMoPub")) {
 			PTAdMoPubBridge.initBridge(this);
 		}
+		
+		if (PTJniHelper.isAdNetworkActive("kFacebook")) {
+			PTAdFacebookBridge.initBridge(this);
+		}
+
 	}
 
 	@Override

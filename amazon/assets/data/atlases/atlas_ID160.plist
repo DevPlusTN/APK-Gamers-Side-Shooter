@@ -5,7 +5,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>PTModelSprite_ID185</key>
+            <key>PTModelSprite_ID990</key>
             <dict>
                 <key>frame</key>
                 <string>{{0, 0}, {1136, 640}}</string>
@@ -18,7 +18,7 @@
                 <key>sourceSize</key>
                 <string>{1136, 640}</string>
             </dict>
-            <key>PTModelSprite_ID174</key>
+            <key>PTModelSprite_ID185</key>
             <dict>
                 <key>frame</key>
                 <string>{{0, 644}, {1136, 640}}</string>
@@ -31,7 +31,7 @@
                 <key>sourceSize</key>
                 <string>{1136, 640}</string>
             </dict>
-            <key>PTModelSprite_ID159</key>
+            <key>PTModelSprite_ID174</key>
             <dict>
                 <key>frame</key>
                 <string>{{0, 1288}, {1136, 640}}</string>
@@ -43,6 +43,32 @@
                 <string>{{0, 0}, {1136, 640}}</string>
                 <key>sourceSize</key>
                 <string>{1136, 640}</string>
+            </dict>
+            <key>PTModelSprite_ID920</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1140, 0}, {217, 217}}</string>
+                <key>offset</key>
+                <string>{0, -0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{2, 1}, {217, 217}}</string>
+                <key>sourceSize</key>
+                <string>{220, 219}</string>
+            </dict>
+            <key>PTModelSprite_ID894</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1361, 0}, {215, 199}}</string>
+                <key>offset</key>
+                <string>{0, -0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{26, 14}, {215, 199}}</string>
+                <key>sourceSize</key>
+                <string>{267, 226}</string>
             </dict>
         </dict>
         <key>metadata</key>

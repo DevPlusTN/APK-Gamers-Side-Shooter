@@ -61,11 +61,11 @@ void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeInit(JNIEnv*  env, jobject thi
         //loading general info 
         PTModelController *mc = PTModelController::shared();
         mc->clean();
-        mc->loadDataForClass( CCString::create("data/PTModelGeneralSettings.0.xml") );
-        mc->loadDataForClass( CCString::create("data/PTModelFont.0.xml") );     
-        mc->loadDataForClass( CCString::create("data/PTModelScreen.0.xml") );
-        mc->loadDataForClass( CCString::create("data/PTModelObjectLabel.0.xml") );
-        mc->loadConnectionsForClass(CCString::create("data/PTModelScreen.0.xml"));
+        mc->loadDataForClass( CCString::create("data/PTModelGeneralSettings.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+        mc->loadDataForClass( CCString::create("data/PTModelFont.0.attributes.xml"), PTModelControllerDataTypeAttributes );     
+        mc->loadDataForClass( CCString::create("data/PTModelScreen.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+        mc->loadDataForClass( CCString::create("data/PTModelObjectLabel.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+        mc->loadDataForClass( CCString::create("data/PTModelScreen.0.connections.xml"), PTModelControllerDataTypeConnections );
 
         PTPAppDelegate *pAppDelegate = new PTPAppDelegate();
         CCApplication::sharedApplication()->run();

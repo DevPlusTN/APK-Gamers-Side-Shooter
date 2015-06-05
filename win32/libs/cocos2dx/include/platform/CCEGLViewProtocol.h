@@ -133,15 +133,11 @@ public:
      */
     const CCRect& getViewPortRect() const;
 
-    /**
-     * Get scale factor of the horizontal direction.
-     */
     float getScaleX() const;
 
-    /**
-     * Get scale factor of the vertical direction.
-     */
     float getScaleY() const;
+
+    ResolutionPolicy resolutionPolicy();
 private:
     void getSetOfTouchesEndOrCancel(CCSet& set, int num, int ids[], float xs[], float ys[]);
 

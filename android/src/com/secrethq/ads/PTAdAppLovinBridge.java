@@ -16,6 +16,10 @@ public class PTAdAppLovinBridge  {
        
     }
 
+    public static void showPopup() {
+        
+    }
+
     public static void showBannerAd(){
 
     }

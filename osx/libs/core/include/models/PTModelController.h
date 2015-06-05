@@ -12,6 +12,12 @@ class PTModelSound;
 
 typedef PTModel *(*CreatePTModelFn)(void);
 
+typedef enum{
+    PTModelControllerDataTypeAttributes = 0,
+    PTModelControllerDataTypeConnections = 1,
+
+} PTModelControllerDataType;
+
 class PTModelController {
 public:    
     static PTModelController *shared();
@@ -37,7 +43,6 @@ public:
     void copySpriteFile(PTModelSprite *original, PTModelSprite *copy);
     bool deleteSpriteFile( PTModelSprite *model );
 
-
     PTModel *createModel( const std::string &className );
 
     PTModelSprite *getSpriteById( int id );
@@ -50,8 +55,7 @@ public:
     // returns true no previous sessions were found
     bool isEmpty() const;
 
-    bool loadDataForClass( CCString *fileName );
-    bool loadConnectionsForClass( CCString *fileName );
+    bool loadDataForClass( CCString *fileName, PTModelControllerDataType dataType );
 
     int fileLoadingProgress();
 
@@ -59,14 +63,18 @@ public:
 
     //QT specific part
 #ifdef __QT__
-    void initDefaultModelSet();
+    static QString rootTempDirPath();
 
-    // removed all existing session folders from work folder
-    void resetWorkingFolder();
+    void initDefaultModelSet();
+    void initWorkingFolder();
+
     QString saveSoundFile( PTModelSound *model, const QString &sourceFilePath );
     QString getSoundFileName( PTModelSound *model );
     bool deleteSoundFile( PTModelSound *model );
     bool isEmptySoundFile( PTModelSound *model );
+
+    bool isWorkDirEmpty();
+    QStringList getSessionsList();
 
     void copyPath(QString src, QString dst);
     QString getWorkingPath( ) { return _workingPath; }
@@ -75,14 +83,23 @@ public:
     bool saveToFile( QString fileName );
     bool saveSession();
 
-    bool writeDataForClass( CCString *className );
+    bool isLoading();
+    void setIsLoading(bool);
+
+    bool writeDataForClass( CCString *className, PTModelControllerDataType dataType );
 
 
     QString errorString() const;
+    void clearErrorString();
 
     bool loadExistingSession();
+    bool loadExistingSession( const QString & );
 
     bool compressFilesToArhive(QString basePath, QStringList filesList, QString archiveName );
+
+    void checkSpriteFiles();
+
+    void onModelChange(QString className);
 #endif
 
 private:
@@ -91,17 +108,19 @@ private:
     explicit PTModelController( );
     virtual ~PTModelController( );
 
+    void init();
+
     void addClass(const std::string &className, CreatePTModelFn pfnCreate);
 
 #ifdef __QT__
     bool compressWorkingFiles( QString fileName );
     void workingFiles( QString path, QStringList &list );
-    void initWorkingFolder();
 
     // remove folder of current session
     void removeWorkingFolder();
-    bool isWorkDirEmpty();
 
+    void checkAtlasFiles();
+    void checkFontFiles();
 #endif
 
     cocos2d::CCDictionary *_data;
@@ -122,9 +141,18 @@ private:
     QStringList _ignoreList;
     QString _errorString;
 
+    QMap<QString, bool> _changeModelMap;
+    bool _isLoading;
+
+    void splitVersionNumbers(char* veriosnString, int *v1, int *v2, int *v3);
+
     //PATCH SECTION
     void pathForObjectSorting();  // since BBox 1.0.9
     void patchForFileLoading( QFileInfo inputFileInfo ); // since BBox 1.0.14
+    void patchForJoystick(); // since BBox 1.1
+    void patchForCharacterBulletsCollisionType(); // since BBox 1.1
+    void patchForDestroyType(); //since BBox 1.1
+
 #endif
 
 

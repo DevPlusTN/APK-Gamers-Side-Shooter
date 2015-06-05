@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>ROOT</key>
+        <array>
+            <dict>
+                <key>id</key>
+                <string>535</string>
+                <key>className</key>
+                <string>PTModelObjectAssetUnit</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>bullet-A</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{110.000,540.000}</string>
+                </dict>
+                <key>Scale</key>
+                <dict>
+                    <key>value</key>
+                    <string>{0.025,0.025}</string>
+                </dict>
+                <key>Asset</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Object Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kBulletCharacterObjectType</string>
+                </dict>
+                <key>Movement Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kMovementLinear</string>
+                </dict>
+                <key>Linear Velocity</key>
+                <dict>
+                    <key>value</key>
+                    <string>{20.000,0.000}</string>
+                </dict>
+                <key>Collision Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoCollision</string>
+                </dict>
+                <key>Destroy Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kDestroyEnemyCollision</string>
+                </dict>
+                <key>Wake Up</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoWakeup</string>
+                </dict>
+                <key>Wakeup Distance</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Sleep</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoWakeup</string>
+                </dict>
+                <key>Sleep Distance</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Spawner</key>
+                <dict>
+                    <key>value</key>
+                    <string>1</string>
+                </dict>
+                <key>Spawn Action</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kShootingSpawning</string>
+                </dict>
+                <key>zDepth</key>
+                <string>0</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>666</string>
+                <key>className</key>
+                <string>PTModelObjectAssetUnit</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>ADK Enemy</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{940.000,480.000}</string>
+                </dict>
+                <key>Scale</key>
+                <dict>
+                    <key>value</key>
+                    <string>{0.250,0.250}</string>
+                </dict>
+                <key>Asset</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Object Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kEnemyObjectType</string>
+                </dict>
+                <key>Movement Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kMovementLinear</string>
+                </dict>
+                <key>Collision Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoCollision</string>
+                </dict>
+                <key>Destroy Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kDestroyCollision</string>
+                </dict>
+                <key>Wake Up</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoWakeup</string>
+                </dict>
+                <key>Wakeup Distance</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Sleep</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kNoWakeup</string>
+                </dict>
+                <key>Sleep Distance</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                </dict>
+                <key>Spawn Rate</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>0.000000</string>
+                </dict>
+                <key>Spawn Action</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>selectedStringValue</key>
+                    <string>kPermanentSpawning</string>
+                </dict>
+                <key>zDepth</key>
+                <string>17</string>
+            </dict>
+        </array>
+    </dict>
+</plist>

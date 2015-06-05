@@ -16,14 +16,12 @@ import com.secrethq.utils.PTServicesBridge;
 
 
 public class PTStoreBridge {
-	private static boolean readyToPurchase;
+	private static boolean readyToPurchase = false;
 	
 	private static IabHelper mHelper;
 	private static Cocos2dxActivity activity;
 	private static WeakReference<Cocos2dxActivity> s_activity;
 	private static Inventory inventory;
-	
-	
 	
 	private static final String TAG = "PTStoreBridge";
 	
@@ -40,6 +38,9 @@ public class PTStoreBridge {
 			   public void onIabSetupFinished(IabResult result) {
 			      if (!result.isSuccess()) {
 			         Log.d(TAG, "Problem setting up In-app Billing: " + result);
+			         readyToPurchase = false;
+			      } else {
+			    	  readyToPurchase = true;
 			      }
 //--
 			   }
@@ -60,6 +61,10 @@ public class PTStoreBridge {
     
 
 	static public void purchase( final String storeId ){
+		if ( !readyToPurchase ) {
+			Log.e(TAG, "In-app Billing not Ready");
+			return;
+		}
 	
 		IabHelper.OnIabPurchaseFinishedListener mPurchaseFinishedListener 
 		   = new IabHelper.OnIabPurchaseFinishedListener() {
@@ -87,11 +92,18 @@ public class PTStoreBridge {
 		   }
 		};
 		
-		mHelper.launchPurchaseFlow(activity, storeId, 10001, mPurchaseFinishedListener, null);
-		
+		try {
+			mHelper.launchPurchaseFlow(activity, storeId, 10001, mPurchaseFinishedListener, null);
+		} catch (Exception e) {
+			Log.v(TAG, "launchPurchaseFlow : FAILED : " + e.getMessage());
+		}
 	}
 	
 	static public void restorePurchases(){
+		if ( !readyToPurchase ) {
+			Log.e(TAG, "In-app Billing not Ready");
+			return;
+		}
 		
 		s_activity.get().runOnUiThread( new Runnable() {
             public void run() {
@@ -126,13 +138,22 @@ public class PTStoreBridge {
 	     		     
 	     		   }
 	     		};
-            	mHelper.queryInventoryAsync(mGotInventoryListener);
+	     		
+	    		try {
+	    			mHelper.queryInventoryAsync(mGotInventoryListener);
+	    		} catch (Exception e) {
+	    			Log.v(TAG, "queryInventoryAsync : FAILED : " + e.getMessage());
+	    		}
             }
 		});
 	}
 	
 	
 	static public void consumePurchase( final Purchase purchase ){		
+		if ( !readyToPurchase ) {
+			Log.e(TAG, "In-app Billing not Ready");
+			return;
+		}
 		
 		final ProgressDialog progress;
 		progress = ProgressDialog.show(activity, null,
@@ -155,9 +176,12 @@ public class PTStoreBridge {
 						};
 						
 				if(purchase !=  null){
-					mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+					try {
+		    			mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+		    		} catch (Exception e) {
+		    			Log.v(TAG, "consumeAsync : FAILED : " + e.getMessage());
+		    		}
 				}
-		
             }
 		});
 	}

@@ -9,7 +9,6 @@ import com.secrethq.store.PTStoreBridge;
 
 import com.secrethq.ads.*;
 import com.secrethq.utils.*;
-import com.chartboost.sdk.Chartboost;
 
 public class PTPlayer extends Cocos2dxActivity {
 
@@ -73,7 +72,7 @@ public class PTPlayer extends Cocos2dxActivity {
 	protected void onResume() {
 		super.onResume();
 		if (PTJniHelper.isAdNetworkActive("kChartboost")) {
-			Chartboost.onResume(this);
+			PTAdChartboostBridge.onResume( this );
 		}
 	}
 
@@ -81,7 +80,7 @@ public class PTPlayer extends Cocos2dxActivity {
 	protected void onStart() {
 		super.onStart();
 		if (PTJniHelper.isAdNetworkActive("kChartboost")) {
-			Chartboost.onStart(this);
+			PTAdChartboostBridge.onStart( this );
 		}
 	}
 
@@ -89,7 +88,7 @@ public class PTPlayer extends Cocos2dxActivity {
 	protected void onStop() {
 		super.onStop();
 		if (PTJniHelper.isAdNetworkActive("kChartboost")) {
-			Chartboost.onStop(this);
+			PTAdChartboostBridge.onStop( this );
 		}
 	}
 

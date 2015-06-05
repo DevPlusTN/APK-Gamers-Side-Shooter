@@ -15,6 +15,10 @@ public class PTAdMoPubBridge {
 
 	}
 
+	public static void showPopup() {
+
+	}
+
 	public static void showBannerAd(){
 
 	}

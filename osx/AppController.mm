@@ -5,6 +5,7 @@
 
 #import "models/PTModelController.h"
 #import "models/PTModelGeneralSettings.h"
+#import "PTPSettingsController.h"
 
 @implementation AppController
     @synthesize window, glView;
@@ -19,33 +20,26 @@ static PTPAppDelegate s_sharedApplication;
     
     PTModelController *mc = PTModelController::shared();
     mc->clean();
-    mc->loadDataForClass( CCString::create("data/PTModelGeneralSettings.0.xml") );
-    mc->loadDataForClass( CCString::create("data/PTModelFont.0.xml") );
-    mc->loadDataForClass( CCString::create("data/PTModelScreen.0.xml") );
-    mc->loadDataForClass( CCString::create("data/PTModelObjectLabel.0.xml") );
-    mc->loadConnectionsForClass(CCString::create("data/PTModelScreen.0.xml"));
+    mc->loadDataForClass( CCString::create("data/PTModelGeneralSettings.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelFont.0.attributes.xml"), PTModelControllerDataTypeAttributes );     
+    mc->loadDataForClass( CCString::create("data/PTModelScreen.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelObjectLabel.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelScreen.0.connections.xml"), PTModelControllerDataTypeConnections );
+       
+    PTPSettingsController::shared()->load();
     
-    
+    window = nil;
+    glView = nil;
     
     NSRect rect = [self screenResolution];
-    window = [[PTPWindow alloc] initWithContentRect:rect
-        styleMask:( NSClosableWindowMask | NSTitledWindowMask )
-        backing:NSBackingStoreBuffered
-        defer:YES];
-    
-    [window setOpaque:true];
-    [window setHidesOnDeactivate:YES];
-    
-    glView = [[EAGLView alloc] initWithFrame:rect];
 
-    [window becomeFirstResponder];
-    [window setContentView:glView];
+    BOOL fullscreen = PTPSettingsController::shared()->isFullscreen();
+    
+    [self adjustWindowForFullscreen:fullscreen];
+    
     NSString *gameName = [NSString stringWithUTF8String:PTModelGeneralSettings::shared()->applicationName->getCString()];
     [window setTitle:gameName];
-    [window makeKeyAndOrderFront:self];
-    [window setAcceptsMouseMovedEvents:NO];
 
-    [glView setFrameZoomFactor:0.6];
 
     printf("GL_VENDOR:     %s\n", glGetString(GL_VENDOR));
     printf("GL_RENDERER:   %s\n", glGetString(GL_RENDERER));
@@ -72,16 +66,48 @@ static PTPAppDelegate s_sharedApplication;
 }
 
 -(void)setFullscreen:(BOOL)value{
-    EAGLView* pView = [EAGLView sharedEGLView];
-    if(value == YES){
-       [glView setFrameZoomFactor:1.0];
+    [self adjustWindowForFullscreen:value];
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(1136, 640, CCEGLView::sharedOpenGLView()->resolutionPolicy());
+
+}
+-(void)adjustWindowForFullscreen:(BOOL)fullscreen{
+    NSRect rect = [self screenResolution];
+    int styleMask = fullscreen ? NSBackingStoreBuffered : ( NSTitledWindowMask | NSClosableWindowMask );
+    if(!window){
+        window = [[PTPWindow alloc] initWithContentRect:rect
+                                               styleMask:styleMask
+                                                 backing:NSBackingStoreBuffered
+                                                   defer:YES];
+    
+        glView = [[EAGLView alloc] initWithFrame:rect];
+        [window setContentView:glView];
+        
+        [window setOpaque:true];
+        [window setHidesOnDeactivate:YES];
+        
+
+
+    }else{
+        [window setStyleMask:styleMask];
+        [window setFrame:rect display:NO];
+        [glView setFrame:rect];
+    }
+    
+    if(fullscreen){
+        [window setLevel:NSMainMenuWindowLevel+1];
+        [window setHidesOnDeactivate:YES];
+        [window setHasShadow:NO];
+        [glView setFrameZoomFactor:1.0];
     }
     else{
-       [glView setFrameZoomFactor:0.6];
+        [window setHasShadow:YES];
+        [glView setFrameZoomFactor:0.6];
     }
-    [pView setFullScreen:value];
-}
+    [window becomeFirstResponder];
+    [window makeKeyAndOrderFront:self];
+    [window setAcceptsMouseMovedEvents:NO];
 
+}
 -(void)loadingDidComplete{
 
 }

@@ -58,6 +58,22 @@ public class PTServicesBridge {
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
             PTServicesBridge.activity.startActivity(Intent.createChooser(sharingIntent, "Share" ));
 	}
+	
+
+	public static void showFacebookPage( final String facebookURL, final String facebookID){
+		Log.v(TAG, "Show facebook page for URL: " + facebookURL + " ID: " + facebookID);
+		
+		PTServicesBridge.s_activity.get().runOnUiThread( new Runnable() {
+			public void run() {
+				try {
+	            	Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + facebookID));
+	            	PTServicesBridge.activity.startActivity(intent);
+	        	} catch(Exception e) {
+	        		PTServicesBridge.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse( facebookURL )));
+		        }
+			}
+		});
+	}
 
 	public static void showWarningMessage(final String message){
 		Log.v(TAG, "Show warning with message: " + message);

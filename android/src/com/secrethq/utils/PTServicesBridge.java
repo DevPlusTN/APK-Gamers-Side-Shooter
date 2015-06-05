@@ -133,8 +133,14 @@ public class PTServicesBridge
 
 		PTServicesBridge.s_activity.get().runOnUiThread( new Runnable() {
 			public void run() {
-				final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(PTServicesBridge.urlString));
-				PTServicesBridge.activity.startActivity(intent);
+				try {
+					final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(PTServicesBridge.urlString));
+					PTServicesBridge.activity.startActivity(intent);
+				} catch(Exception e) {
+			        //Print exception
+			        Log.d(TAG, "OpenURL: Failed.");
+			        e.printStackTrace();
+			    }
 			}
 		});
 	}
@@ -151,7 +157,7 @@ public class PTServicesBridge
 		PTServicesBridge.s_activity.get().runOnUiThread( new Runnable() {
 			public void run() {
 				String leaderboardId = PTServicesBridge.getLeaderboardId();
-				if(leaderboardId == null){
+				if(leaderboardId == null || leaderboardId.isEmpty()){
 					return;
 				}
 				PTServicesBridge.activity.startActivityForResult(Games.Leaderboards.getLeaderboardIntent(PTServicesBridge.mGoogleApiClient,
@@ -169,11 +175,26 @@ public class PTServicesBridge
 		}
 
 		String leaderboardId = PTServicesBridge.getLeaderboardId();
-		if(leaderboardId == null){
+		if(leaderboardId == null || leaderboardId.isEmpty()){
 			return;
 		}
 		PTServicesBridge.scoreValue = score;
 		Games.Leaderboards.submitScore(PTServicesBridge.mGoogleApiClient, leaderboardId, PTServicesBridge.scoreValue);
+	}
+
+	public static void showFacebookPage( final String facebookURL, final String facebookID){
+		Log.v(TAG, "Show facebook page for URL: " + facebookURL + " ID: " + facebookID);
+		
+		PTServicesBridge.s_activity.get().runOnUiThread( new Runnable() {
+			public void run() {
+				try {
+	            	Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + facebookID));
+	            	PTServicesBridge.activity.startActivity(intent);
+	        	} catch(Exception e) {
+	        		PTServicesBridge.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse( facebookURL )));
+		        }
+			}
+		});
 	}
 
 	public static void showWarningMessage(final String message){

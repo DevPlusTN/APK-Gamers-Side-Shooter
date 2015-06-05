@@ -11,6 +11,9 @@ public class PTAdUpsightBridge {
 	public static void showFullScreen() {
 	}
 
+	public static void showPopup() {
+	}
+
 	public static void showBannerAd(){
 	}
 

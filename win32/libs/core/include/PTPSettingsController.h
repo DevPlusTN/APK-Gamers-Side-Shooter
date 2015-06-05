@@ -25,7 +25,9 @@ class PTPSettingsController: public CCObject {
 
 public:
     PTPSettingsController();
+    virtual ~PTPSettingsController();
     static PTPSettingsController* shared();
+    static void resetShared();
 
     void setPowerupInventoryAmount(PTModelAssetPowerup* powerup, int amount);
     int powerupInventoryAmount( PTModelAssetPowerup* powerup);
@@ -35,12 +37,14 @@ public:
 
     int coins;
     int coinsSession;
+    int bestCoinsSession;
     float distance;
     float bestDistance;
 
     virtual void save();
     virtual void load();
     void reset();
+    void resetInventory();
 
     void setRemoveAds( bool );
     bool removeAds();
@@ -48,12 +52,15 @@ public:
     void setMuteSound( bool );
     bool isMuteSound();
 
+    void setFullscreen( bool value);
+    bool isFullscreen();
+
     void setLowPerformanceMode( bool value);
     bool isLowPerformanceMode();
 
     PTPowerupCheckpointStruct checkpoint;
 
-    void loadInventoryMap();
+    void loadDefaultInventoryMap();
 
 protected:
     typedef std::map<unsigned int, PTPowerupRefillStruct> PTPowerupRefillMap;
@@ -67,6 +74,7 @@ private:
     bool _removeAds;
     bool _muteSound;
     bool _lowPerformanceMode;
+    bool _fullscreen;
 
 };
 

@@ -15,6 +15,7 @@
 #include "CCDirector.h"
 #include "CCScheduler.h"
 
+#include "PTPConfig.h"
 #include "models/PTModelController.h"
 #include "screens/PTPScreenGameField.h"
 #include "PTPAppDelegate.h"
@@ -33,7 +34,9 @@
 #include "OISForceFeedback.h"
 
 // Steam API include
+#ifdef USE_STEAM
 #include "steam_api.h"
+#endif
 
 using namespace OIS;
 
@@ -47,6 +50,88 @@ Keyboard *g_kb = 0;				//Keyboard Device
 
 HWND hWnd = 0;
 
+std::map<int, int> _keysMap = {
+	{41, 96},// `
+	{2, 49},// 1
+	{3, 50},// 2
+	{4, 51},// 3
+	{5, 52},// 4
+	{6, 53},// 5
+	{7, 54},// 6
+	{8, 55},// 7
+	{9, 56},// 8
+	{10, 57},// 9
+	{11, 48},// 0
+	{12, 45},// -
+	{13, 61},// =
+	{16, 81},// Q
+	{17, 87},// W
+	{18, 69},// E
+	{19, 82},// R
+	{20, 84},// T
+	{21, 89},// Y
+	{22, 85},// U 
+	{23, 73},// I
+	{24, 79},// O
+	{25, 80},// P
+	{26, 91},// [
+	{27, 93},// ]
+	{43, 92},// "\"
+	{30, 65},// A
+	{31, 83},// S
+	{32, 68},// D
+	{33, 70},// F 
+	{34, 71},// G
+	{35, 72},// H
+	{36, 74},// J
+	{37, 75},// K
+	{38, 76},// L
+	{39, 59},// ;
+	{40, 39},// ' 
+	{44, 90},// Z
+	{45, 88},// X
+	{46, 67},// C 
+	{47, 86},// V
+	{48, 66},// B
+	{49, 78},// N
+	{50, 77},// M
+	{51, 44},// ,
+	{52, 46},// .
+	{53, 47},// /
+	{203, 16777234},// Left
+	{208, 16777237},// Down
+	{205, 16777236},// Right 
+	{200, 16777235},// Up
+	{1, 16777216},// Esc
+	{59, 16777264},// F1
+	{60, 16777265},// F2
+	{61, 16777266},// F3
+	{62, 16777267},// F4
+	{63, 16777268},// F5
+	{64, 16777269},// F6
+	{65, 16777270},// F7
+	{66, 16777271},// F8 
+	{67, 16777272},// F9
+	{68, 16777273},// F10
+	{87, 16777274},// F11
+	{88, 16777275},// F12
+	{199, 16777232},// Home
+	{207, 16777233},// End
+	{210, 16777222},// Insert
+	{211, 16777223},// Delete
+	{15, 16777217},// Tab
+	{58, 16777252},// Caps Lock
+	{42, 16777248},// Shift
+	{29, 16777249},// Ctrl 
+	{56, 16777251},// Alt  
+	{57, 32},// Space 
+	{181, 47},// Num / 
+	{55, 42},// *
+	{74, 45},// -
+	{78, 43},// +
+	{156, 16777221},// Num Enter
+};
+
 //////////// Common Event handler class ////////
 class EventHandler : public KeyListener
 {
@@ -54,10 +139,61 @@ public:
 	EventHandler() {}
 	~EventHandler() {}
 	bool keyPressed(const KeyEvent &arg) {
-		CCLOG(" KeyPressed {%d, %s} Character (%c)",
+		
+		PTLog(" KeyPressed {%d, %s} Character (%c)",
 			arg.key, ((Keyboard*)(arg.device))->getAsString(arg.key).c_str(), (char)arg.text);
 		PTPScreenGameField *gf = PTPScreenGameField::shared();
 		if (gf) {
+			PTPInputController *inputController = gf->inputController();
+			PTModelGeneralSettings *settsModel = (PTModelGeneralSettings *)PTModelController::shared()->getModel("PTModelGeneralSettings");
+			int key = _keysMap[ arg.key ];
+
+			PTPScreen *screenLayer = PTPScreen::getTopScreen();
+			if (inputController->handleKeyPressOnScreen(key, screenLayer)) {
+				return true;
+			}
+
+			if (settsModel->moveUpKey == key) {
+				inputController->buttonMoveUpPressed();
+				return true;
+			}
+			if (settsModel->moveDownKey == key) {
+				inputController->buttonMoveDownPressed();
+				return true;
+			}
+			if (settsModel->moveLeftKey == key) {
+				inputController->buttonMoveLeftPressed();
+				return true;
+			}
+			if (settsModel->moveRightKey == key) {
+				inputController->buttonMoveRightPressed();
+				return true;
+			}
+			if (settsModel->motorCWKey == key) {
+				inputController->buttonMotorCWPressed();
+				return true;
+			}
+			if (settsModel->motorCCWKey == key) {
+				inputController->buttonMotorCCWPressed();
+				return true;
+			}
+			if (settsModel->rotateLeftKey == key) {
+				inputController->buttonRotateLeftPressed();
+				return true;
+			}
+			if (settsModel->rotateRightKey == key) {
+				inputController->buttonRotateRightPressed();
+				return true;
+			}
+			if (settsModel->shootKey == key) {
+				inputController->buttonShootPressed();
+				return true;
+			}
+			if (settsModel->jumpKey == key) {
+				inputController->buttonJumpPressed();
+				return true;
+			}
+
 			if (arg.key == 203)
 				gf->inputController()->keyPressed(PTPInputControllerKeyLeft);
 			if (arg.key == 205)
@@ -82,10 +218,60 @@ public:
 		return true;
 	}
 	bool keyReleased(const KeyEvent &arg) {
-		CCLOG("KeyReleased {%s}",
+		PTLog("KeyReleased {%s}",
 			((Keyboard*)(arg.device))->getAsString(arg.key).c_str());
 		PTPScreenGameField *gf = PTPScreenGameField::shared();
 		if (gf) {
+			PTPInputController *inputController = gf->inputController();
+			PTModelGeneralSettings *settsModel = (PTModelGeneralSettings *)PTModelController::shared()->getModel("PTModelGeneralSettings");
+			int key = _keysMap[arg.key];
+
+			PTPScreen *screenLayer = PTPScreen::getTopScreen();
+			if (inputController->handleKeyReleaseOnScreen(key, screenLayer)) {
+				return true;
+			}
+
+			if (settsModel->moveUpKey == key) {
+				inputController->buttonMoveUpReleased();
+				return true;
+			}
+			if (settsModel->moveDownKey == key) {
+				inputController->buttonMoveDownReleased();
+				return true;
+			}
+			if (settsModel->moveLeftKey == key) {
+				inputController->buttonMoveLeftReleased();
+				return true;
+			}
+			if (settsModel->moveRightKey == key) {
+				inputController->buttonMoveRightReleased();
+				return true;
+			}
+			if (settsModel->motorCWKey == key) {
+				inputController->buttonMotorCWReleased();
+				return true;
+			}
+			if (settsModel->motorCCWKey == key) {
+				inputController->buttonMotorCCWReleased();
+				return true;
+			}
+			if (settsModel->rotateLeftKey == key) {
+				inputController->buttonRotateLeftReleased();
+				return true;
+			}
+			if (settsModel->rotateRightKey == key) {
+				inputController->buttonRotateRightReleased();
+				return true;
+			}
+			if (settsModel->shootKey == key) {
+				inputController->buttonShootReleased();
+				return true;
+			}
+			if (settsModel->jumpKey == key) {
+				inputController->buttonJumpReleased();
+				return true;
+			}
+
 			if (arg.key == 203)
 				gf->inputController()->keyReleased(PTPInputControllerKeyLeft);
 			if (arg.key == 205)
@@ -127,11 +313,11 @@ public:
 			g_kb->capture();
 			if (!g_kb->buffered()) {
 				if (g_kb->isModifierDown(Keyboard::Shift))
-					CCLOG("Shift is down..\n");
+					PTLog("Shift is down..\n");
 				if (g_kb->isModifierDown(Keyboard::Alt))
-					CCLOG("Alt is down..\n");
+					PTLog("Alt is down..\n");
 				if (g_kb->isModifierDown(Keyboard::Ctrl))
-					CCLOG("Ctrl is down..\n");
+					PTLog("Ctrl is down..\n");
 			}
 		}
 	};
@@ -147,17 +333,21 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
 	PTModelController *mc = PTModelController::shared();
 	mc->clean();
-	mc->loadDataForClass(CCString::create("data/PTModelGeneralSettings.0.xml"));
-	mc->loadDataForClass(CCString::create("data/PTModelFont.0.xml"));
+    mc->loadDataForClass( CCString::create("data/PTModelGeneralSettings.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelFont.0.attributes.xml"), PTModelControllerDataTypeAttributes );     
+    mc->loadDataForClass( CCString::create("data/PTModelScreen.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelObjectLabel.0.attributes.xml"), PTModelControllerDataTypeAttributes );
+    mc->loadDataForClass( CCString::create("data/PTModelScreen.0.connections.xml"), PTModelControllerDataTypeConnections );
 
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
     eglView->setViewName("Player");
 	eglView->setFrameSize(1134, 640);
 	eglView->setFrameZoomFactor(1.0f);
 
-	// disabled Steam Initialization
-	//bool steamStarted = SteamAPI_Init();
-	//std::cout << "Steam Started: %b" << steamStarted;
+#ifdef USE_STEAM
+    bool steamStarted = SteamAPI_Init();
+    std::cout << "Steam Started: %b" << steamStarted;
+#endif
 
 	ParamList pl;
 	hWnd = eglView->getHWnd();	
@@ -200,5 +390,6 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
 	CCDirector::sharedDirector()->getScheduler()->scheduleUpdateForTarget(&ccobjectTarget, 0, false);
 
+	mc->clean();
     return CCApplication::sharedApplication()->run();
 }
