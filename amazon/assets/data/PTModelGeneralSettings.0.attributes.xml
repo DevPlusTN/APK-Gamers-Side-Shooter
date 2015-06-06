@@ -71,7 +71,7 @@
                     <string>{0.000,0.000}</string>
                 </dict>
                 <key>lastIdNumber</key>
-                <string>1417</string>
+                <string>1484</string>
                 <key>gameSpeedMin</key>
                 <string>4.000000</string>
                 <key>gameSpeedMax</key>
@@ -159,7 +159,7 @@
                 <key>objectFrameRect</key>
                 <string>{{0.0000,0.0000},{1.0000,1.0000}}</string>
                 <key>_ibVersion</key>
-                <string>1.2.1</string>
+                <string>1.2.2</string>
                 <key>t</key>
                 <string>0</string>
                 <key>orientation</key>

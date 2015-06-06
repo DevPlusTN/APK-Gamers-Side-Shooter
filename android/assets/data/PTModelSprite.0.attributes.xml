@@ -1120,27 +1120,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>990</string>
-                <key>className</key>
-                <string>PTModelSprite</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>MainMenu</string>
-                </dict>
-                <key>pos</key>
-                <string>{0.00,0.00}</string>
-                <key>offset</key>
-                <string>{0.00,0.00}</string>
-                <key>size</key>
-                <string>{1136.00,640.00}</string>
-                <key>sourceSize</key>
-                <string>{1136.00,640.00}</string>
-                <key>sourceRect</key>
-                <string>{{0.00,0.00},{1136.00,640.00}}</string>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>1103</string>
                 <key>className</key>
                 <string>PTModelSprite</string>
@@ -1264,6 +1243,27 @@
                 <string>{301.00,101.00}</string>
                 <key>sourceRect</key>
                 <string>{{0.00,0.00},{301.00,101.00}}</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1428</string>
+                <key>className</key>
+                <string>PTModelSprite</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>MainMenu</string>
+                </dict>
+                <key>pos</key>
+                <string>{0.00,0.00}</string>
+                <key>offset</key>
+                <string>{0.00,0.00}</string>
+                <key>size</key>
+                <string>{1136.00,640.00}</string>
+                <key>sourceSize</key>
+                <string>{1136.00,640.00}</string>
+                <key>sourceRect</key>
+                <string>{{0.00,0.00},{1136.00,640.00}}</string>
             </dict>
         </array>
     </dict>

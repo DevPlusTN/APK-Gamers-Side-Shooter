@@ -32,8 +32,8 @@
                     <string>852</string>
                     <string>117</string>
                     <string>848</string>
-                    <string>516</string>
                     <string>890</string>
+                    <string>516</string>
                     <string>113</string>
                     <string>909</string>
                     <string>617</string>
@@ -43,10 +43,9 @@
                     <string>790</string>
                     <string>787</string>
                     <string>789</string>
-                    <string>362</string>
                     <string>959</string>
+                    <string>362</string>
                     <string>791</string>
-                    <string>1296</string>
                     <string>502</string>
                     <string>297</string>
                     <string>278</string>
@@ -55,6 +54,7 @@
                     <string>1154</string>
                     <string>1268</string>
                     <string>1294</string>
+                    <string>1296</string>
                     <string>1103</string>
                     <string>1122</string>
                 </array>
@@ -64,7 +64,7 @@
                 <string>160</string>
                 <key>sprites</key>
                 <array>
-                    <string>990</string>
+                    <string>1428</string>
                     <string>185</string>
                     <string>174</string>
                     <string>920</string>

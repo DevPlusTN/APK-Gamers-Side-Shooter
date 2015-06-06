@@ -275,24 +275,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>993</string>
-                <key>className</key>
-                <string>PTModelObjectImage</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Main Menu</string>
-                </dict>
-                <key>Position</key>
-                <dict>
-                    <key>value</key>
-                    <string>{567.684,320.000}</string>
-                </dict>
-                <key>zDepth</key>
-                <string>0</string>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>1106</string>
                 <key>className</key>
                 <string>PTModelObjectImage</string>
@@ -311,13 +293,26 @@
                     <key>value</key>
                     <string>{4.000,4.000}</string>
                 </dict>
-                <key>Autohide</key>
+                <key>zDepth</key>
+                <string>3</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1431</string>
+                <key>className</key>
+                <string>PTModelObjectImage</string>
+                <key>Name</key>
                 <dict>
                     <key>value</key>
-                    <string>1.000000</string>
+                    <string>Untitled</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{568.000,320.000}</string>
                 </dict>
                 <key>zDepth</key>
-                <string>2</string>
+                <string>0</string>
             </dict>
         </array>
     </dict>

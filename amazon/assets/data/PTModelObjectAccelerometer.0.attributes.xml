@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>ROOT</key>
+        <array>
+            <dict>
+                <key>id</key>
+                <string>1446</string>
+                <key>className</key>
+                <string>PTModelObjectAccelerometer</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>Accelerometer</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{501.129,264.261}</string>
+                </dict>
+                <key>Control Style</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlStyleRelative</string>
+                </dict>
+                <key>Control Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlTypeMove</string>
+                </dict>
+                <key>zDepth</key>
+                <string>0</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1465</string>
+                <key>className</key>
+                <string>PTModelObjectAccelerometer</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>Accelerometer</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{501.129,264.261}</string>
+                </dict>
+                <key>Control Style</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlStyleRelative</string>
+                </dict>
+                <key>Control Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlTypeMove</string>
+                </dict>
+                <key>zDepth</key>
+                <string>1</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1467</string>
+                <key>className</key>
+                <string>PTModelObjectAccelerometer</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>Accelerometer</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{583.865,340.316}</string>
+                </dict>
+                <key>Control Style</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlStyleRelative</string>
+                </dict>
+                <key>Control Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlTypeMove</string>
+                </dict>
+                <key>zDepth</key>
+                <string>0</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1468</string>
+                <key>className</key>
+                <string>PTModelObjectAccelerometer</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>Accelerometer</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{583.865,340.316}</string>
+                </dict>
+                <key>Control Style</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlStyleRelative</string>
+                </dict>
+                <key>Control Type</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kControlTypeMove</string>
+                </dict>
+                <key>zDepth</key>
+                <string>1</string>
+            </dict>
+        </array>
+    </dict>
+</plist>

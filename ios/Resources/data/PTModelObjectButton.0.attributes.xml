@@ -130,7 +130,7 @@
                     <string>-1</string>
                 </dict>
                 <key>zDepth</key>
-                <string>3</string>
+                <string>4</string>
             </dict>
             <dict>
                 <key>id</key>
@@ -930,11 +930,6 @@
                     <key>value</key>
                     <string>{4.000,4.000}</string>
                 </dict>
-                <key>Autohide</key>
-                <dict>
-                    <key>value</key>
-                    <string>1.000000</string>
-                </dict>
                 <key>Action</key>
                 <dict>
                     <key>selectedStringValue</key>
@@ -946,7 +941,7 @@
                     <string>32</string>
                 </dict>
                 <key>zDepth</key>
-                <string>4</string>
+                <string>5</string>
             </dict>
             <dict>
                 <key>id</key>

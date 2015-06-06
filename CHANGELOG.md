@@ -16,9 +16,9 @@ ANDROID (Eclipse IDE)
 IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO [Mobile Devices] (Visual Studio 2013)
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
 #### Changes:  
-Added: WINRT - WINDOWS METRO [Mobile Devices] (Visual Studio 2013)  
+Added: WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
 Added: Touch Screen Support (Both Mobile Devices and Desktop support)  
 Added: Accelerometer  
 Added: Joystick buttons  
@@ -63,3 +63,22 @@ Fixed: score is not getting reported to leader board on game end scene (only gam
 Fixed: Buttons from Main Menu can still be pressed in Shop despite not being visible  
 Fixed: Power Up Sound Not Working (IDLE and END)  
 Fixed: added IDLE sound increase while character is closer to object  
+  
+### Version 0.0.3  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
+#### Changes:  
+Updated: iOS Admob SDK to 7.2.2  
+Fixed: text/label misalign (old files need to refresh font)  
+Fixed: joystick/accelerometer  
+Fixed: game over delay  
+Fixed: various crashes  
+Fixed: various issues with sound not playing  
+
+
+[Mobile Devices]:http://en.wikipedia.org/wiki/Mobile_device

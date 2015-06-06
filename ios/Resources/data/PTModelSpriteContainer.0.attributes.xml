@@ -370,17 +370,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>989</string>
-                <key>className</key>
-                <string>PTModelSpriteContainer</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>MainMenu</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>1102</string>
                 <key>className</key>
                 <string>PTModelSpriteContainer</string>
@@ -453,6 +442,17 @@
                 <dict>
                     <key>value</key>
                     <string>Set11__0021_On_Upgrade</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1427</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>MainMenu</string>
                 </dict>
             </dict>
         </array>

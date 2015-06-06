@@ -191,7 +191,13 @@ public class PTServicesBridge
 	            	Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + facebookID));
 	            	PTServicesBridge.activity.startActivity(intent);
 	        	} catch(Exception e) {
-	        		PTServicesBridge.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse( facebookURL )));
+	        		Log.v(TAG, "Show facebook FAILED going to exception handler : " + e.getMessage());
+	        		try {
+	        			PTServicesBridge.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse( facebookURL )));
+					} catch (Exception e2) {
+						Log.v(TAG, "Show facebook exception handle FAILED : " + e2.getMessage());
+					}
+	        		
 		        }
 			}
 		});

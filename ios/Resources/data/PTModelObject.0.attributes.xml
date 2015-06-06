@@ -85,31 +85,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>1085</string>
-                <key>className</key>
-                <string>PTModelObject</string>
-                <key>Name</key>
-                <dict>
-                    <key>visible</key>
-                    <string>0</string>
-                    <key>value</key>
-                    <string>Joystick Touch Area</string>
-                </dict>
-                <key>Position</key>
-                <dict>
-                    <key>value</key>
-                    <string>{120.334,76.013}</string>
-                </dict>
-                <key>Scale</key>
-                <dict>
-                    <key>value</key>
-                    <string>{1.500,1.500}</string>
-                </dict>
-                <key>zDepth</key>
-                <string>5</string>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>1087</string>
                 <key>className</key>
                 <string>PTModelObject</string>
@@ -170,7 +145,32 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>1177</string>
+                <string>1440</string>
+                <key>className</key>
+                <string>PTModelObject</string>
+                <key>Name</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>value</key>
+                    <string>Joystick Touch Area</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{120.334,76.013}</string>
+                </dict>
+                <key>Scale</key>
+                <dict>
+                    <key>value</key>
+                    <string>{1.500,1.500}</string>
+                </dict>
+                <key>zDepth</key>
+                <string>5</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>1444</string>
                 <key>className</key>
                 <string>PTModelObject</string>
                 <key>Name</key>
@@ -186,7 +186,7 @@
                     <string>{579.976,295.976}</string>
                 </dict>
                 <key>zDepth</key>
-                <string>1</string>
+                <string>2</string>
             </dict>
         </array>
     </dict>
