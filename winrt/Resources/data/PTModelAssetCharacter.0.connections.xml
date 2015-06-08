@@ -21,12 +21,12 @@
                 <key>Shoot Sound</key>
                 <dict>
                     <key>value</key>
-                    <string>830</string>
+                    <string>1654</string>
                 </dict>
                 <key>Defeated Sound</key>
                 <dict>
                     <key>value</key>
-                    <string>831</string>
+                    <string>1655</string>
                 </dict>
             </dict>
         </array>

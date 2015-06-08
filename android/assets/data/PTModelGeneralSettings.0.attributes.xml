@@ -71,7 +71,7 @@
                     <string>{0.000,0.000}</string>
                 </dict>
                 <key>lastIdNumber</key>
-                <string>1642</string>
+                <string>1677</string>
                 <key>gameSpeedMin</key>
                 <string>4.000000</string>
                 <key>gameSpeedMax</key>
@@ -92,10 +92,10 @@
                         <string></string>
                         <key>shareMessageTemplate</key>
                         <string></string>
-                        <key>reviewLink</key>
-                        <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>reviewLink</key>
+                        <string></string>
                         <key>bannersOrder</key>
                         <string>kAdMob</string>
                         <key>interstitialsOrder</key>
@@ -109,43 +109,47 @@
                         <string>ca-app-pub-4578475177163842/7897236566</string>
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
-                        <key>versionCode</key>
-                        <string>1</string>
                         <key>bundleID</key>
                         <string></string>
                         <key>shareMessageTemplate</key>
                         <string></string>
-                        <key>reviewLink</key>
-                        <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>reviewLink</key>
+                        <string></string>
+                        <key>versionCode</key>
+                        <string>5</string>
                     </dict>
                     <key>Microsoft Windows Marketplace</key>
                     <dict>
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
-                        <key>reviewLink</key>
-                        <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>reviewLink</key>
+                        <string></string>
                     </dict>
                     <key>Amazon App Store</key>
                     <dict>
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
-                        <key>versionCode</key>
-                        <string>1</string>
-                        <key>reviewLink</key>
+                        <key>bundleID</key>
                         <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>shareMessageTemplate</key>
+                        <string></string>
+                        <key>reviewLink</key>
+                        <string></string>
+                        <key>versionCode</key>
+                        <string>5</string>
                     </dict>
                     <key>Apple Mac App Store</key>
                     <dict>
-                        <key>reviewLink</key>
-                        <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>reviewLink</key>
+                        <string></string>
                     </dict>
                     <key>Steam Store</key>
                     <dict>
@@ -162,7 +166,7 @@
                 <key>scoreType</key>
                 <string>Coins</string>
                 <key>versionNumber</key>
-                <string>0.0.4</string>
+                <string>0.0.5</string>
                 <key>applicationName</key>
                 <string>ADK Gamers Side Shooter</string>
                 <key>comments</key>
