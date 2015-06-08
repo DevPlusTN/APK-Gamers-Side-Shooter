@@ -82,12 +82,12 @@
                 <key>Ad Interstitial</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Ad Banner</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Background Scene</key>
                 <dict>
@@ -114,12 +114,12 @@
                 <key>Ad Interstitial</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Ad Banner</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Background Scene</key>
                 <dict>
@@ -215,12 +215,12 @@
                 <key>Ad Interstitial</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Ad Banner</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Background Scene</key>
                 <dict>
@@ -247,12 +247,12 @@
                 <key>Ad Interstitial</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Ad Banner</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kNoAds</string>
+                    <string>kAdMob</string>
                 </dict>
                 <key>Background Scene</key>
                 <dict>

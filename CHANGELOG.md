@@ -80,5 +80,19 @@ Fixed: game over delay
 Fixed: various crashes  
 Fixed: various issues with sound not playing  
 
+### Version 0.0.4  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+#### Changes:  
+Updated: AdMob information  
+Added: More scenes with enemies more spread out  
+Fixed: Minor changes and bug fixes for AdMob placement  
+Removed: Clean-up of unused assets  
+
 
 [Mobile Devices]:http://en.wikipedia.org/wiki/Mobile_device
