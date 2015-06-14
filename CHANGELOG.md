@@ -94,5 +94,38 @@ Added: More scenes with enemies more spread out
 Fixed: Minor changes and bug fixes for AdMob placement  
 Removed: Clean-up of unused assets  
 
-
+### Version 0.0.5  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+#### Changes:  
+Fixed: Missing sound files that gotten deleted by mistake when cleaning up unused resources  
+Fixed: Misc changes and bug fixes  
+  
+### Version 0.0.6  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+#### Changes:  
+Added: New Scoring System for distance travelled.  
+Added: Missing Version 0.0.5 changes to the Change log  
+Added: Increased Scenes Count to the game with more enemies.  
+Fixed: Missing Package name in AndroidManifest.xml for AMAZON  
+Fixed: Missing Package name in AndroidManifest.xml for ANDROID  
+Fixed: Missing Bundle ID for IOS  
+Fixed: Missing Bundle ID for OSX  
+Fixed: Missing Bundle ID for WIN32  
+Fixed: Missing Bundle ID for WINRT  
+Modified: Now if you go to close to the Ocean you will now crash into it and die  
+Modified: Increased Population of enemies in each scene.  
+  
+  
 [Mobile Devices]:http://en.wikipedia.org/wiki/Mobile_device

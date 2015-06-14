@@ -70,8 +70,13 @@
                     <key>value</key>
                     <string>{0.000,0.000}</string>
                 </dict>
+                <key>Score Multiplier</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.035000</string>
+                </dict>
                 <key>lastIdNumber</key>
-                <string>1677</string>
+                <string>2468</string>
                 <key>gameSpeedMin</key>
                 <string>4.000000</string>
                 <key>gameSpeedMax</key>
@@ -89,17 +94,17 @@
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
                         <key>bundleID</key>
-                        <string></string>
-                        <key>shareMessageTemplate</key>
-                        <string></string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>shareMessageTemplate</key>
+                        <string></string>
                         <key>reviewLink</key>
                         <string></string>
                         <key>bannersOrder</key>
-                        <string>kAdMob</string>
+                        <string>kAdMob,kFacebook,kiAd</string>
                         <key>interstitialsOrder</key>
-                        <string>kAdMob</string>
+                        <string>kAdMob,kFacebook,kiAd</string>
                     </dict>
                     <key>Google Play Store</key>
                     <dict>
@@ -109,16 +114,20 @@
                         <string>ca-app-pub-4578475177163842/7897236566</string>
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
-                        <key>bundleID</key>
-                        <string></string>
                         <key>shareMessageTemplate</key>
                         <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>bundleID</key>
+                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <key>versionCode</key>
+                        <string>6</string>
+                        <key>bannersOrder</key>
+                        <string>kAdMob,kFacebook,kiAd</string>
+                        <key>interstitialsOrder</key>
+                        <string>kAdMob,kFacebook,kiAd</string>
                         <key>reviewLink</key>
                         <string></string>
-                        <key>versionCode</key>
-                        <string>5</string>
                     </dict>
                     <key>Microsoft Windows Marketplace</key>
                     <dict>
@@ -126,6 +135,12 @@
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>bundleID</key>
+                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <key>bannersOrder</key>
+                        <string>kFacebook,kAdMob,kiAd</string>
+                        <key>interstitialsOrder</key>
+                        <string>kFacebook,kAdMob,kiAd</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
@@ -133,28 +148,38 @@
                     <dict>
                         <key>leadBolt</key>
                         <string>ewTSiwYk7snXUauyWZs1q8b6Fw6OlzqC</string>
-                        <key>bundleID</key>
-                        <string></string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>shareMessageTemplate</key>
                         <string></string>
+                        <key>bundleID</key>
+                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <key>versionCode</key>
+                        <string>6</string>
+                        <key>bannersOrder</key>
+                        <string>kAdMob,kFacebook,kiAd</string>
+                        <key>interstitialsOrder</key>
+                        <string>kAdMob,kFacebook,kiAd</string>
                         <key>reviewLink</key>
                         <string></string>
-                        <key>versionCode</key>
-                        <string>5</string>
                     </dict>
                     <key>Apple Mac App Store</key>
                     <dict>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
+                        <key>bundleID</key>
+                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <key>bannersOrder</key>
+                        <string>kFacebook,kAdMob,kiAd</string>
+                        <key>interstitialsOrder</key>
+                        <string>kFacebook,kAdMob,kiAd</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
                     <key>Steam Store</key>
                     <dict>
                         <key>bundleID</key>
-                        <string></string>
+                        <string>us.apkmultigames.adkgamers.sideshooter</string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>shareMessageTemplate</key>
@@ -164,9 +189,9 @@
                     </dict>
                 </dict>
                 <key>scoreType</key>
-                <string>Coins</string>
+                <string>Distance</string>
                 <key>versionNumber</key>
-                <string>0.0.5</string>
+                <string>0.0.6</string>
                 <key>applicationName</key>
                 <string>ADK Gamers Side Shooter</string>
                 <key>comments</key>
