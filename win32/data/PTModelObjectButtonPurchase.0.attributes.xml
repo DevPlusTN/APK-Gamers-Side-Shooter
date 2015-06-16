@@ -27,11 +27,6 @@
                     <key>selectedStringValue</key>
                     <string>589</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>Type</key>
                 <dict>
                     <key>selectedStringValue</key>
@@ -94,11 +89,6 @@
                     <key>selectedStringValue</key>
                     <string>589</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>Block Touch</key>
                 <dict>
                     <key>value</key>
@@ -159,11 +149,6 @@
                     <key>selectedStringValue</key>
                     <string>589</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>Type</key>
                 <dict>
                     <key>selectedStringValue</key>
@@ -203,11 +188,6 @@
                     <string>0</string>
                     <key>selectedStringValue</key>
                     <string>589</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>Type</key>
                 <dict>

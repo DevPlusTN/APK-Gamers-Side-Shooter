@@ -1,15 +1,27 @@
 
 package com.secrethq.utils;
 
+import us.apkmultigames.adkgamers.sideshooter.Free.R;
 import java.lang.ref.WeakReference;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.EnumSet;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
+import com.amazon.ags.api.AGResponseCallback;
+import com.amazon.ags.api.AGResponseHandle;
+import com.amazon.ags.api.AmazonGamesCallback;
+import com.amazon.ags.api.AmazonGamesClient;
+import com.amazon.ags.api.AmazonGamesFeature;
+import com.amazon.ags.api.AmazonGamesStatus;
+import com.amazon.ags.api.leaderboards.LeaderboardsClient;
+import com.amazon.ags.api.leaderboards.SubmitScoreResponse;
+
 import android.content.*;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.net.Uri;
 
@@ -49,7 +61,37 @@ public class PTServicesBridge {
 		}
 
 	}
-
+	
+	//reference to the agsClient
+	static AmazonGamesClient agsClient;
+		 
+	static AmazonGamesCallback callback = new AmazonGamesCallback() {
+		@Override
+		public void onServiceNotReady(AmazonGamesStatus status) {
+		    //unable to use service
+			Log.e("PTPlayer", "AmazonGames ERROR onServiceNotReady");
+		}
+		@Override
+		public void onServiceReady(AmazonGamesClient amazonGamesClient) {
+			agsClient = amazonGamesClient;
+		    //ready to use GameCircle
+		    Log.d("PTPlayer", "AmazonGames OK onServiceReady");
+		}
+	};
+		
+	//leaderboards only
+	static EnumSet<AmazonGamesFeature> myGameFeatures = EnumSet.of(
+			AmazonGamesFeature.Leaderboards);
+	
+	public static void onResume( Activity act){
+		AmazonGamesClient.initialize(act, callback, myGameFeatures);
+	}
+	
+	public static void onPause( Activity act){
+		if (agsClient != null) {
+	        agsClient.release();
+	    }
+	}
 	
      public static void openShareWidget( String message ){
             Log.v(TAG, "PTServicesBridge  -- openShareWidget with text:" + message);
@@ -115,17 +157,50 @@ public class PTServicesBridge {
 	  
 	public static void showLeaderboard( ){
 		Log.v(TAG, "PTServicesBridge  -- Show Leaderboard ");
-
+		if (agsClient == null) {
+			Log.e(TAG, "PTServicesBridge  -- Amazon Games Client NOT READY ");
+		}
+		try {
+			LeaderboardsClient lbClient = agsClient.getLeaderboardsClient();
+			lbClient.showLeaderboardsOverlay();   
+		} catch (Exception e) {
+			 Log.e(TAG, "PTServicesBridge  -- Show Leaderboard FAILED ");
+		}
 	}
 
 	public static void submitScrore( int score ){
 		Log.v(TAG, "PTServicesBridge  -- Submit Score " + score);
 
+		if (agsClient == null) {
+			Log.e(TAG, "PTServicesBridge  -- Amazon Games Client NOT READY ");
+		}
+		try {
+			
+			// Replace YOUR_LEADERBOARD_ID with an actual leaderboard ID from your game.
+			LeaderboardsClient lbClient = agsClient.getLeaderboardsClient();
+			
+			String leaderboardID = PTServicesBridge.activity.getString(R.string.leaderboard_id);
+			AGResponseHandle<SubmitScoreResponse> handle = lbClient.submitScore(leaderboardID, score);
+			 
+			// Optional callback to receive notification of success/failure.
+			handle.setCallback(new AGResponseCallback<SubmitScoreResponse>() {
+			    @Override
+			    public void onComplete(SubmitScoreResponse result) {
+			        if (result.isError()) {
+			            // Add optional error handling here.  Not strictly required
+			            // since retries and on-device request caching are automatic.
+			        } else {
+			            // Continue game flow.
+			        }
+			    }
+			});
+		} catch (Exception e) {
+			Log.e(TAG, "PTServicesBridge  -- Submit Score FAILED");
+		}
 	}
 
 	public static void loginGameServices( ){
 		Log.v(TAG, "PTServicesBridge  -- Login Game Services ");
-		
 
 	}
 

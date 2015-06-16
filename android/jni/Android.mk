@@ -10,6 +10,8 @@ LOCAL_SRC_FILES := main.cpp
 
 LOCAL_WHOLE_STATIC_LIBRARIES :=  core_static cocos2dx_static box2d_static
 
+GOOGLE_PLAY_STORE := true
+
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module, box2D)

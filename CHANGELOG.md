@@ -5,7 +5,7 @@
 #### Supported Devices:  
 AMAZON (Eclipse IDE) [Broken]  
 ANDROID (Eclipse IDE) [Broken]  
-IOS (XCODE IDE) [Broken]  
+IOS {[Mobile Devices]} (XCODE IDE) [Broken]  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2012)
 
@@ -13,7 +13,7 @@ WIN32 - WINDOWS 32 bit System (Visual Studio 2012)
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS (XCODE IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
 WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
@@ -68,7 +68,7 @@ Fixed: added IDLE sound increase while character is closer to object
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS (XCODE IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
 WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
@@ -84,7 +84,7 @@ Fixed: various issues with sound not playing
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS (XCODE IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
 WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
@@ -98,7 +98,7 @@ Removed: Clean-up of unused assets
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS (XCODE IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
 WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
@@ -110,7 +110,7 @@ Fixed: Misc changes and bug fixes
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS (XCODE IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
 WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
@@ -126,6 +126,32 @@ Fixed: Missing Bundle ID for WIN32
 Fixed: Missing Bundle ID for WINRT  
 Modified: Now if you go to close to the Ocean you will now crash into it and die  
 Modified: Increased Population of enemies in each scene.  
+  
+### Version 0.0.7  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS {[Mobile Devices]} (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+#### Changes: 
+Added: New Graphic for the Joystick  
+Added: New Graphic for the Fire Button.  
+Added: New Graphic for the Pause button 
+Modified: New Package name in AndroidManifest.xml for AMAZON  
+Modified: New Package name in AndroidManifest.xml for ANDROID  
+Modified: New Bundle ID for IOS  
+Modified: New Bundle ID for OSX  
+Modified: New Bundle ID for WIN32  
+Modified: New Bundle ID for WINRT 
+Modified: Joystick for the touch-screen support to look for cleaner and crisp.  
+Modified: Fire button to look like a actual fire button instead of a green blob.  
+Modified: Length of level from 20 scenes to 100 scenes.  
+Removed: Clean up of unused images to reduce size of the game from all platforms  
+Removed: Clean up of unused objects to reduce size of the game from all platforms  
+Removed: Clean up of unused code to reduce size of the game from all platforms  
+Removed: Clean up of unused Advertisement SDKs from all platforms  
   
   
 [Mobile Devices]:http://en.wikipedia.org/wiki/Mobile_device

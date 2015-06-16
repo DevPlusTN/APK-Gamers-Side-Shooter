@@ -1153,7 +1153,7 @@
 					"$(SRCROOT)/libs/core",
 					"$(PROJECT_DIR)/libs/ads/**",
 				);
-				OTHER_LDFLAGS = ("-ObjC", "-framework iAd", "-framework GoogleMobileAds", "-framework FBAudienceNetwork", "-framework AdSupport" );
+				OTHER_LDFLAGS = ("-ObjC", "-framework GoogleMobileAds", "-framework AdSupport" );
 				PRODUCT_NAME = PZPlayer;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1206,7 +1206,7 @@
 					"$(SRCROOT)/libs/core",
 					"$(PROJECT_DIR)/libs/ads/**",
 				);
-				OTHER_LDFLAGS = ("-ObjC", "-framework iAd", "-framework GoogleMobileAds", "-framework FBAudienceNetwork", "-framework AdSupport" );
+				OTHER_LDFLAGS = ("-ObjC", "-framework GoogleMobileAds", "-framework AdSupport" );
 				PRODUCT_NAME = PZPlayer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

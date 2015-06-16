@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="us.apkmultigames.adkgamers.sideshooter"
-      android:versionCode="6"
-      android:versionName="0.0.6">
+      package="us.apkmultigames.adkgamers.sideshooter.Free"
+      android:versionCode="7"
+      android:versionName="0.0.7">
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="21"/>
 
@@ -22,19 +22,52 @@
             </intent-filter>
         </activity>
 
+        <!-- Amazon GameCircles  -->
+        <activity android:name="com.amazon.ags.html5.overlay.GameCircleUserInterface"
+		android:theme="@style/GCOverlay" android:hardwareAccelerated="false"></activity>
+		<activity
+		  android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
+		  android:theme="@android:style/Theme.NoDisplay"
+		  android:allowTaskReparenting="true"
+		  android:launchMode="singleTask">
+		  <intent-filter>
+		     <action android:name="android.intent.action.VIEW" />
+		     <category android:name="android.intent.category.DEFAULT" />
+		     <category android:name="android.intent.category.BROWSABLE" />
+		     <data android:host="us.apkmultigames.adkgamers.sideshooter.Free" android:scheme="amzn" />
+		  </intent-filter>
+		</activity>
+		<activity android:name="com.amazon.ags.html5.overlay.GameCircleAlertUserInterface"
+		android:theme="@style/GCAlert" android:hardwareAccelerated="false"></activity>
+		<receiver
+		  android:name="com.amazon.identity.auth.device.authorization.PackageIntentReceiver"
+		  android:enabled="true">
+		  <intent-filter>
+		     <action android:name="android.intent.action.PACKAGE_INSTALL" />
+		     <action android:name="android.intent.action.PACKAGE_ADDED" />
+		     <data android:scheme="package" />
+		  </intent-filter>
+		</receiver>
 
     <meta-data android:name="com.google.android.gms.version"
                  android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.gms.games.APP_ID" 
                  android:value="0" />
-
-                 
+                
        
         <activity android:name="com.revmob.ads.fullscreen.FullscreenActivity" 
                   android:theme="@android:style/Theme.Translucent"
                   android:configChanges="keyboardHidden|orientation"> 
         </activity>
   
+        <receiver android:name="com.amazon.device.iap.ResponseReceiver" >
+            <intent-filter>
+                <action
+                    android:name="com.amazon.inapp.purchasing.NOTIFY"
+                    android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+            </intent-filter>
+        </receiver>
+
           <!-- APPLOVIN SDK -->
         <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
         <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />

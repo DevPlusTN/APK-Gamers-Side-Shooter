@@ -57,13 +57,14 @@
                     <string>PTModelPolygon</string>
                     <key>points</key>
                     <array>
-                        <string>{-67.000000,-77.000000}</string>
-                        <string>{77.000000,-77.000000}</string>
-                        <string>{77.000000,84.000000}</string>
-                        <string>{-67.000000,84.000000}</string>
+                        <string>{-31.000000,-62.000000}</string>
+                        <string>{79.000000,-79.000000}</string>
+                        <string>{75.000000,90.000000}</string>
+                        <string>{-31.500000,67.500000}</string>
+                        <string>{-78.000000,0.000000}</string>
                     </array>
                     <key>oneWayCollisionVector</key>
-                    <string>{0.000000,0.000000}</string>
+                    <string>{0.000000,1.000000}</string>
                     <key>shapeType</key>
                     <string>1</string>
                 </dict>

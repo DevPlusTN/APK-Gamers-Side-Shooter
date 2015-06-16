@@ -37,7 +37,7 @@
                     <string>a1</string>
                 </dict>
                 <key>pos</key>
-                <string>{1631.00,829.00}</string>
+                <string>{1229.00,829.00}</string>
                 <key>offset</key>
                 <string>{35.00,20.00}</string>
                 <key>size</key>
@@ -58,7 +58,7 @@
                     <string>a2</string>
                 </dict>
                 <key>pos</key>
-                <string>{1681.00,604.00}</string>
+                <string>{1670.00,1028.00}</string>
                 <key>offset</key>
                 <string>{3.00,6.00}</string>
                 <key>size</key>
@@ -79,7 +79,7 @@
                     <string>a3</string>
                 </dict>
                 <key>pos</key>
-                <string>{1246.00,604.00}</string>
+                <string>{1028.00,379.00}</string>
                 <key>offset</key>
                 <string>{29.00,3.00}</string>
                 <key>size</key>
@@ -100,7 +100,7 @@
                     <string>a4</string>
                 </dict>
                 <key>pos</key>
-                <string>{1028.00,604.00}</string>
+                <string>{1242.00,379.00}</string>
                 <key>offset</key>
                 <string>{27.00,3.00}</string>
                 <key>size</key>
@@ -121,7 +121,7 @@
                     <string>a5</string>
                 </dict>
                 <key>pos</key>
-                <string>{1578.00,1454.00}</string>
+                <string>{1359.00,1454.00}</string>
                 <key>offset</key>
                 <string>{26.00,14.00}</string>
                 <key>size</key>
@@ -301,27 +301,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>203</string>
-                <key>className</key>
-                <string>PTModelSprite</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0028_continue</string>
-                </dict>
-                <key>pos</key>
-                <string>{1601.00,1672.00}</string>
-                <key>offset</key>
-                <string>{0.00,0.00}</string>
-                <key>size</key>
-                <string>{301.00,101.00}</string>
-                <key>sourceSize</key>
-                <string>{301.00,101.00}</string>
-                <key>sourceRect</key>
-                <string>{{0.00,0.00},{301.00,101.00}}</string>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>214</string>
                 <key>className</key>
                 <string>PTModelSprite</string>
@@ -364,48 +343,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>275</string>
-                <key>className</key>
-                <string>PTModelSprite</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0029_Remove_Ads</string>
-                </dict>
-                <key>pos</key>
-                <string>{1296.00,1672.00}</string>
-                <key>offset</key>
-                <string>{8.00,6.00}</string>
-                <key>size</key>
-                <string>{301.00,101.00}</string>
-                <key>sourceSize</key>
-                <string>{315.00,112.00}</string>
-                <key>sourceRect</key>
-                <string>{{8.00,6.00},{301.00,101.00}}</string>
-            </dict>
-            <dict>
-                <key>id</key>
-                <string>278</string>
-                <key>className</key>
-                <string>PTModelSprite</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0028_continue</string>
-                </dict>
-                <key>pos</key>
-                <string>{991.00,1672.00}</string>
-                <key>offset</key>
-                <string>{0.00,0.00}</string>
-                <key>size</key>
-                <string>{301.00,101.00}</string>
-                <key>sourceSize</key>
-                <string>{301.00,101.00}</string>
-                <key>sourceRect</key>
-                <string>{{0.00,0.00},{301.00,101.00}}</string>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>297</string>
                 <key>className</key>
                 <string>PTModelSprite</string>
@@ -415,7 +352,7 @@
                     <string>Set11__0012_pause</string>
                 </dict>
                 <key>pos</key>
-                <string>{1933.00,1454.00}</string>
+                <string>{1737.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -436,7 +373,7 @@
                     <string>ADK Logo02 120x120</string>
                 </dict>
                 <key>pos</key>
-                <string>{438.00,1672.00}</string>
+                <string>{698.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -478,7 +415,7 @@
                     <string>a1</string>
                 </dict>
                 <key>pos</key>
-                <string>{1229.00,829.00}</string>
+                <string>{1028.00,829.00}</string>
                 <key>offset</key>
                 <string>{35.00,20.00}</string>
                 <key>size</key>
@@ -520,7 +457,7 @@
                     <string>a3</string>
                 </dict>
                 <key>pos</key>
-                <string>{1460.00,379.00}</string>
+                <string>{1028.00,604.00}</string>
                 <key>offset</key>
                 <string>{29.00,3.00}</string>
                 <key>size</key>
@@ -541,7 +478,7 @@
                     <string>a4</string>
                 </dict>
                 <key>pos</key>
-                <string>{1674.00,379.00}</string>
+                <string>{1242.00,604.00}</string>
                 <key>offset</key>
                 <string>{27.00,3.00}</string>
                 <key>size</key>
@@ -646,7 +583,7 @@
                     <string>a1</string>
                 </dict>
                 <key>pos</key>
-                <string>{1797.00,1454.00}</string>
+                <string>{438.00,1672.00}</string>
                 <key>offset</key>
                 <string>{14.00,20.00}</string>
                 <key>size</key>
@@ -709,7 +646,7 @@
                     <string>a4</string>
                 </dict>
                 <key>pos</key>
-                <string>{1846.00,1247.00}</string>
+                <string>{1926.00,1454.00}</string>
                 <key>offset</key>
                 <string>{23.00,20.00}</string>
                 <key>size</key>
@@ -772,7 +709,7 @@
                     <string>a1</string>
                 </dict>
                 <key>pos</key>
-                <string>{1028.00,829.00}</string>
+                <string>{1430.00,829.00}</string>
                 <key>offset</key>
                 <string>{35.00,20.00}</string>
                 <key>size</key>
@@ -793,7 +730,7 @@
                     <string>a2</string>
                 </dict>
                 <key>pos</key>
-                <string>{1670.00,1028.00}</string>
+                <string>{1681.00,604.00}</string>
                 <key>offset</key>
                 <string>{3.00,6.00}</string>
                 <key>size</key>
@@ -856,7 +793,7 @@
                     <string>a5</string>
                 </dict>
                 <key>pos</key>
-                <string>{1359.00,1454.00}</string>
+                <string>{1578.00,1454.00}</string>
                 <key>offset</key>
                 <string>{26.00,14.00}</string>
                 <key>size</key>
@@ -898,7 +835,7 @@
                     <string>a1</string>
                 </dict>
                 <key>pos</key>
-                <string>{1430.00,829.00}</string>
+                <string>{1631.00,829.00}</string>
                 <key>offset</key>
                 <string>{35.00,20.00}</string>
                 <key>size</key>
@@ -940,7 +877,7 @@
                     <string>a3</string>
                 </dict>
                 <key>pos</key>
-                <string>{1028.00,379.00}</string>
+                <string>{1460.00,379.00}</string>
                 <key>offset</key>
                 <string>{29.00,3.00}</string>
                 <key>size</key>
@@ -961,7 +898,7 @@
                     <string>a4</string>
                 </dict>
                 <key>pos</key>
-                <string>{1242.00,379.00}</string>
+                <string>{1674.00,379.00}</string>
                 <key>offset</key>
                 <string>{27.00,3.00}</string>
                 <key>size</key>
@@ -1087,7 +1024,7 @@
                     <string>ADK Logo02 120x120</string>
                 </dict>
                 <key>pos</key>
-                <string>{562.00,1672.00}</string>
+                <string>{574.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1129,7 +1066,7 @@
                     <string>green_boxTick</string>
                 </dict>
                 <key>pos</key>
-                <string>{1964.00,0.00}</string>
+                <string>{2004.00,136.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1150,7 +1087,7 @@
                     <string>green_circle</string>
                 </dict>
                 <key>pos</key>
-                <string>{2004.00,0.00}</string>
+                <string>{1964.00,136.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1192,7 +1129,7 @@
                     <string>Set11__0019_On_Continue</string>
                 </dict>
                 <key>pos</key>
-                <string>{305.00,1824.00}</string>
+                <string>{1432.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1213,7 +1150,7 @@
                     <string>Set11__0019_On_Continue</string>
                 </dict>
                 <key>pos</key>
-                <string>{610.00,1824.00}</string>
+                <string>{1127.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1234,7 +1171,7 @@
                     <string>Set11__0021_On_Upgrade</string>
                 </dict>
                 <key>pos</key>
-                <string>{686.00,1672.00}</string>
+                <string>{822.00,1672.00}</string>
                 <key>offset</key>
                 <string>{0.00,0.00}</string>
                 <key>size</key>
@@ -1264,6 +1201,90 @@
                 <string>{1136.00,640.00}</string>
                 <key>sourceRect</key>
                 <string>{{0.00,0.00},{1136.00,640.00}}</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2496</string>
+                <key>className</key>
+                <string>PTModelSprite</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentLight02</string>
+                </dict>
+                <key>pos</key>
+                <string>{1797.00,1454.00}</string>
+                <key>offset</key>
+                <string>{0.00,0.00}</string>
+                <key>size</key>
+                <string>{125.00,125.00}</string>
+                <key>sourceSize</key>
+                <string>{125.00,125.00}</string>
+                <key>sourceRect</key>
+                <string>{{0.00,0.00},{125.00,125.00}}</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2502</string>
+                <key>className</key>
+                <string>PTModelSprite</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentDark47</string>
+                </dict>
+                <key>pos</key>
+                <string>{1964.00,0.00}</string>
+                <key>offset</key>
+                <string>{0.00,0.00}</string>
+                <key>size</key>
+                <string>{80.00,80.00}</string>
+                <key>sourceSize</key>
+                <string>{80.00,80.00}</string>
+                <key>sourceRect</key>
+                <string>{{0.00,0.00},{80.00,80.00}}</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2520</string>
+                <key>className</key>
+                <string>PTModelSprite</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentDark05</string>
+                </dict>
+                <key>pos</key>
+                <string>{1846.00,1247.00}</string>
+                <key>offset</key>
+                <string>{0.00,0.00}</string>
+                <key>size</key>
+                <string>{160.00,160.00}</string>
+                <key>sourceSize</key>
+                <string>{160.00,160.00}</string>
+                <key>sourceRect</key>
+                <string>{{0.00,0.00},{160.00,160.00}}</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2530</string>
+                <key>className</key>
+                <string>PTModelSprite</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>shadedDark14</string>
+                </dict>
+                <key>pos</key>
+                <string>{1964.00,84.00}</string>
+                <key>offset</key>
+                <string>{0.00,0.00}</string>
+                <key>size</key>
+                <string>{48.00,48.00}</string>
+                <key>sourceSize</key>
+                <string>{48.00,48.00}</string>
+                <key>sourceRect</key>
+                <string>{{0.00,0.00},{48.00,48.00}}</string>
             </dict>
         </array>
     </dict>

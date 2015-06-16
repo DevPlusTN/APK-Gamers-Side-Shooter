@@ -183,7 +183,7 @@
                 <key>Name</key>
                 <dict>
                     <key>value</key>
-                    <string>Untitled</string>
+                    <string>Explosion</string>
                 </dict>
                 <key>zDepth</key>
                 <string>0</string>
@@ -196,7 +196,7 @@
                 <key>Name</key>
                 <dict>
                     <key>value</key>
-                    <string>Untitled</string>
+                    <string>ADK Enemy</string>
                 </dict>
                 <key>zDepth</key>
                 <string>0</string>
@@ -286,15 +286,10 @@
                 <key>Position</key>
                 <dict>
                     <key>value</key>
-                    <string>{120.334,71.616}</string>
-                </dict>
-                <key>Scale</key>
-                <dict>
-                    <key>value</key>
-                    <string>{4.000,4.000}</string>
+                    <string>{130.000,80.000}</string>
                 </dict>
                 <key>zDepth</key>
-                <string>4</string>
+                <string>3</string>
             </dict>
             <dict>
                 <key>id</key>

@@ -37,7 +37,7 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>1714</string>
+                <string>2497</string>
                 <key>className</key>
                 <string>PTModelObjectLabel</string>
                 <key>Name</key>
@@ -48,7 +48,7 @@
                 <key>Position</key>
                 <dict>
                     <key>value</key>
-                    <string>{1110.000,610.000}</string>
+                    <string>{980.000,520.000}</string>
                 </dict>
                 <key>Scale</key>
                 <dict>
@@ -82,6 +82,36 @@
                 </dict>
                 <key>zDepth</key>
                 <string>1</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>3758</string>
+                <key>className</key>
+                <string>PTModelObjectLabel</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Default Font</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{539.632,452.635}</string>
+                </dict>
+                <key>Action</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kCustomVector</string>
+                </dict>
+                <key>Alignment</key>
+                <dict>
+                    <key>visible</key>
+                    <string>0</string>
+                    <key>selectedStringValue</key>
+                    <string>kCCTextAlignmentLeft</string>
+                </dict>
+                <key>zDepth</key>
+                <string>0</string>
             </dict>
         </array>
     </dict>

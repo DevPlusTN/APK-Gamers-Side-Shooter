@@ -14,6 +14,15 @@
                     <string>591</string>
                 </dict>
             </dict>
+            <dict>
+                <key>id</key>
+                <string>3736</string>
+                <key>Idle Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>3738</string>
+                </dict>
+            </dict>
         </array>
     </dict>
 </plist>

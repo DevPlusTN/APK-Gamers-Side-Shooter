@@ -15,6 +15,46 @@
                     <key>visible</key>
                     <string>0</string>
                 </dict>
+                <key>Version Number</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.0.7</string>
+                </dict>
+                <key>Application Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>ADK Gamers Side Shooter</string>
+                </dict>
+                <key>Comments</key>
+                <dict>
+                    <key>value</key>
+                    <string>add comments here</string>
+                </dict>
+                <key>Reset text</key>
+                <dict>
+                    <key>value</key>
+                    <string>PLEASE NOTE:  You are about to reset all your game progress and start completely over.  Are you sure you want to do that?</string>
+                </dict>
+                <key>Game Speed Min</key>
+                <dict>
+                    <key>value</key>
+                    <string>4.000000</string>
+                </dict>
+                <key>Game Speed Max</key>
+                <dict>
+                    <key>value</key>
+                    <string>4.000000</string>
+                </dict>
+                <key>Game Speed Increase</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.000000</string>
+                </dict>
+                <key>Game Speed Current</key>
+                <dict>
+                    <key>value</key>
+                    <string>0.000000</string>
+                </dict>
                 <key>Game Preset</key>
                 <dict>
                     <key>value</key>
@@ -75,14 +115,33 @@
                     <key>value</key>
                     <string>0.035000</string>
                 </dict>
+                <key>Motor CW Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Motor CCW Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Rotate Left Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Rotate Right Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
+                <key>Jump Key</key>
+                <dict>
+                    <key>value</key>
+                    <string>-1</string>
+                </dict>
                 <key>lastIdNumber</key>
-                <string>2468</string>
-                <key>gameSpeedMin</key>
-                <string>4.000000</string>
-                <key>gameSpeedMax</key>
-                <string>4.000000</string>
-                <key>gameSpeedIncrease</key>
-                <string>0.000000</string>
+                <string>8359</string>
                 <key>platformSpecificValues</key>
                 <dict>
                     <key>Apple iOS App Store</key>
@@ -99,12 +158,14 @@
                         <string>ADK Gamers Side Shooter</string>
                         <key>shareMessageTemplate</key>
                         <string></string>
+                        <key>iAds</key>
+                        <string>0</string>
+                        <key>interstitialsOrder</key>
+                        <string>kAdMob</string>
+                        <key>bannersOrder</key>
+                        <string>kAdMob</string>
                         <key>reviewLink</key>
                         <string></string>
-                        <key>bannersOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
-                        <key>interstitialsOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
                     </dict>
                     <key>Google Play Store</key>
                     <dict>
@@ -119,13 +180,13 @@
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>bundleID</key>
-                        <string>us.apkmultigames.adkgamers.sideshooter</string>
-                        <key>versionCode</key>
-                        <string>6</string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>bannersOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
+                        <string>kAdMob</string>
                         <key>interstitialsOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
+                        <string>kAdMob</string>
+                        <key>versionCode</key>
+                        <string>7</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
@@ -136,11 +197,11 @@
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>bundleID</key>
-                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>bannersOrder</key>
-                        <string>kFacebook,kAdMob,kiAd</string>
+                        <string>kAdMob</string>
                         <key>interstitialsOrder</key>
-                        <string>kFacebook,kAdMob,kiAd</string>
+                        <string>kAdMob</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
@@ -153,13 +214,13 @@
                         <key>shareMessageTemplate</key>
                         <string></string>
                         <key>bundleID</key>
-                        <string>us.apkmultigames.adkgamers.sideshooter</string>
-                        <key>versionCode</key>
-                        <string>6</string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>bannersOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
+                        <string>kAdMob</string>
                         <key>interstitialsOrder</key>
-                        <string>kAdMob,kFacebook,kiAd</string>
+                        <string>kAdMob</string>
+                        <key>versionCode</key>
+                        <string>7</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
@@ -168,18 +229,20 @@
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>bundleID</key>
-                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>bannersOrder</key>
-                        <string>kFacebook,kAdMob,kiAd</string>
+                        <string>kAdMob</string>
                         <key>interstitialsOrder</key>
-                        <string>kFacebook,kAdMob,kiAd</string>
+                        <string>kAdMob</string>
                         <key>reviewLink</key>
                         <string></string>
                     </dict>
                     <key>Steam Store</key>
                     <dict>
+                        <key>leaderboardId</key>
+                        <string></string>
                         <key>bundleID</key>
-                        <string>us.apkmultigames.adkgamers.sideshooter</string>
+                        <string>us.apkmultigames.adkgamers.sideshooter.Free</string>
                         <key>nameOnDevice</key>
                         <string>ADK Gamers Side Shooter</string>
                         <key>shareMessageTemplate</key>
@@ -190,14 +253,6 @@
                 </dict>
                 <key>scoreType</key>
                 <string>Distance</string>
-                <key>versionNumber</key>
-                <string>0.0.6</string>
-                <key>applicationName</key>
-                <string>ADK Gamers Side Shooter</string>
-                <key>comments</key>
-                <string></string>
-                <key>resetText</key>
-                <string>PLEASE NOTE:  You are about to reset all your game progress and start completely over.  Are you sure you want to do that?</string>
                 <key>objectFrameEdgeState_0</key>
                 <string>1</string>
                 <key>objectFrameEdgeState_1</key>
@@ -216,28 +271,6 @@
                 <string>PTPScreenOrientationLandscape</string>
                 <key>screenAdjustment</key>
                 <string>0</string>
-                <key>gameplayAngleDirection</key>
-                <string>0</string>
-                <key>moveUpKey</key>
-                <string>16777235</string>
-                <key>moveDownKey</key>
-                <string>16777237</string>
-                <key>moveLeftKey</key>
-                <string>16777234</string>
-                <key>moveRightKey</key>
-                <string>16777236</string>
-                <key>motorCWKey</key>
-                <string>88</string>
-                <key>motorCCWKey</key>
-                <string>90</string>
-                <key>rotateLeftKey</key>
-                <string>44</string>
-                <key>rotateRightKey</key>
-                <string>46</string>
-                <key>shootKey</key>
-                <string>32</string>
-                <key>jumpKey</key>
-                <string>74</string>
             </dict>
         </array>
     </dict>

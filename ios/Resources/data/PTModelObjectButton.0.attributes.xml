@@ -30,11 +30,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>2</string>
             </dict>
@@ -58,11 +53,6 @@
                     <key>selectedStringValue</key>
                     <string>kContinueButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>2</string>
             </dict>
@@ -81,20 +71,10 @@
                     <key>value</key>
                     <string>{20.000,30.000}</string>
                 </dict>
-                <key>Scale</key>
-                <dict>
-                    <key>value</key>
-                    <string>{0.500,0.500}</string>
-                </dict>
                 <key>Action</key>
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kPauseButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>0</string>
@@ -124,11 +104,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>5</string>
             </dict>
@@ -156,11 +131,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>Block Touch</key>
                 <dict>
@@ -195,11 +165,6 @@
                     <key>selectedStringValue</key>
                     <string>kInfoButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>4</string>
             </dict>
@@ -228,11 +193,6 @@
                     <key>selectedStringValue</key>
                     <string>kCoinShopButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>3</string>
             </dict>
@@ -256,11 +216,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -283,11 +238,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -317,11 +267,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>2</string>
             </dict>
@@ -345,11 +290,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -372,11 +312,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -406,11 +341,6 @@
                     <key>selectedStringValue</key>
                     <string>kCoinShopButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>3</string>
             </dict>
@@ -434,11 +364,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -461,11 +386,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -495,11 +415,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartCheckpointButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>4</string>
             </dict>
@@ -523,11 +438,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -550,11 +460,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -584,11 +489,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestorePurchasesButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>5</string>
             </dict>
@@ -612,11 +512,6 @@
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -639,11 +534,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kStartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -673,11 +563,6 @@
                     <key>selectedStringValue</key>
                     <string>kGameServices</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>5</string>
             </dict>
@@ -700,11 +585,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -729,11 +609,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -756,11 +631,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>3</string>
@@ -785,11 +655,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -812,11 +677,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -846,11 +706,6 @@
                     <key>selectedStringValue</key>
                     <string>kCharacterShootButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>3</string>
             </dict>
@@ -873,11 +728,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -902,11 +752,6 @@
                     <key>selectedStringValue</key>
                     <string>kRestartButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -918,17 +763,17 @@
                 <key>Name</key>
                 <dict>
                     <key>value</key>
-                    <string>Fire Button</string>
+                    <string>Fire Button image</string>
                 </dict>
                 <key>Position</key>
                 <dict>
                     <key>value</key>
-                    <string>{1063.951,75.143}</string>
+                    <string>{1050.000,90.000}</string>
                 </dict>
                 <key>Scale</key>
                 <dict>
                     <key>value</key>
-                    <string>{4.000,4.000}</string>
+                    <string>{2.000,2.000}</string>
                 </dict>
                 <key>Action</key>
                 <dict>
@@ -940,8 +785,13 @@
                     <key>value</key>
                     <string>32</string>
                 </dict>
+                <key>Block Touch</key>
+                <dict>
+                    <key>value</key>
+                    <string>0</string>
+                </dict>
                 <key>zDepth</key>
-                <string>6</string>
+                <string>4</string>
             </dict>
             <dict>
                 <key>id</key>
@@ -962,11 +812,6 @@
                 <dict>
                     <key>selectedStringValue</key>
                     <string>kBackButton</string>
-                </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
                 </dict>
                 <key>zDepth</key>
                 <string>1000</string>
@@ -991,11 +836,6 @@
                     <key>selectedStringValue</key>
                     <string>kBackButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>1000</string>
             </dict>
@@ -1019,13 +859,82 @@
                     <key>selectedStringValue</key>
                     <string>kBackButton</string>
                 </dict>
-                <key>Keyboard Key</key>
-                <dict>
-                    <key>value</key>
-                    <string>-1</string>
-                </dict>
                 <key>zDepth</key>
                 <string>2</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2498</string>
+                <key>className</key>
+                <string>PTModelObjectButton</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Untitled</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{1026.386,73.491}</string>
+                </dict>
+                <key>Action</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kRestartButton</string>
+                </dict>
+                <key>zDepth</key>
+                <string>1000</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2499</string>
+                <key>className</key>
+                <string>PTModelObjectButton</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Untitled</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{1026.386,73.491}</string>
+                </dict>
+                <key>Action</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kRestartButton</string>
+                </dict>
+                <key>zDepth</key>
+                <string>1000</string>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2511</string>
+                <key>className</key>
+                <string>PTModelObjectButton</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Fire Button</string>
+                </dict>
+                <key>Position</key>
+                <dict>
+                    <key>value</key>
+                    <string>{890.000,380.000}</string>
+                </dict>
+                <key>Scale</key>
+                <dict>
+                    <key>value</key>
+                    <string>{1.500,1.500}</string>
+                </dict>
+                <key>Action</key>
+                <dict>
+                    <key>selectedStringValue</key>
+                    <string>kCharacterShootButton</string>
+                </dict>
+                <key>zDepth</key>
+                <string>6</string>
             </dict>
         </array>
     </dict>

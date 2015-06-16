@@ -117,17 +117,6 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>202</string>
-                <key>className</key>
-                <string>PTModelSpriteContainer</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0028_continue</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>id</key>
                 <string>213</string>
                 <key>className</key>
                 <string>PTModelSpriteContainer</string>
@@ -146,28 +135,6 @@
                 <dict>
                     <key>value</key>
                     <string>ADKGAMERS</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>id</key>
-                <string>274</string>
-                <key>className</key>
-                <string>PTModelSpriteContainer</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0029_Remove_Ads</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>id</key>
-                <string>277</string>
-                <key>className</key>
-                <string>PTModelSpriteContainer</string>
-                <key>Name</key>
-                <dict>
-                    <key>value</key>
-                    <string>Set11__0028_continue</string>
                 </dict>
             </dict>
             <dict>
@@ -453,6 +420,50 @@
                 <dict>
                     <key>value</key>
                     <string>MainMenu</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2495</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentLight02</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2501</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentDark47</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2519</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>transparentDark05</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>2529</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>shadedDark14</string>
                 </dict>
             </dict>
         </array>

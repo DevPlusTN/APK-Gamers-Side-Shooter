@@ -19,7 +19,7 @@
 		<string>Icon-152.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>us.apkmultigames.adkgamers.sideshooter</string>
+	<string>us.apkmultigames.adkgamers.sideshooter.Free</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -27,11 +27,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.6</string>
+	<string>0.0.7</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.6</string>
+	<string>0.0.7</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
