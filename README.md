@@ -1,4 +1,4 @@
-# ADKGamers-Sideshooter
+# ADKGamers Side Shooter
 A Side Shooter Game build using the Infinity Engine Multi-platform  
   
 This is just a Test of the Infinity Engine Building a Fully Functional Side shooter on Multiple platforms such as OSX windows Android and other Devices  
