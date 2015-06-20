@@ -28,7 +28,7 @@
                 <key>Action</key>
                 <dict>
                     <key>selectedStringValue</key>
-                    <string>kRestartButton</string>
+                    <string>kRestartCheckpointButton</string>
                 </dict>
                 <key>zDepth</key>
                 <string>2</string>
@@ -329,7 +329,7 @@
                 <key>Position</key>
                 <dict>
                     <key>value</key>
-                    <string>{568.370,198.882}</string>
+                    <string>{560.000,200.000}</string>
                 </dict>
                 <key>Scale</key>
                 <dict>

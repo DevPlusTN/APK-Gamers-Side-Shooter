@@ -353,6 +353,46 @@
                     <string>2530</string>
                 </array>
             </dict>
+            <dict>
+                <key>id</key>
+                <string>8399</string>
+                <key>sprites</key>
+                <array>
+                    <string>8400</string>
+                </array>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8407</string>
+                <key>sprites</key>
+                <array>
+                    <string>8408</string>
+                </array>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8419</string>
+                <key>sprites</key>
+                <array>
+                    <string>8420</string>
+                </array>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8430</string>
+                <key>sprites</key>
+                <array>
+                    <string>8431</string>
+                </array>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8438</string>
+                <key>sprites</key>
+                <array>
+                    <string>8439</string>
+                </array>
+            </dict>
         </array>
     </dict>
 </plist>

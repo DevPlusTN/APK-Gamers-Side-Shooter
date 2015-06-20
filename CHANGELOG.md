@@ -5,7 +5,7 @@
 #### Supported Devices:  
 AMAZON (Eclipse IDE) [Broken]  
 ANDROID (Eclipse IDE) [Broken]  
-IOS {[Mobile Devices]} (XCODE IDE) [Broken]  
+IOS (XCODE IDE) [Broken]  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2012)
 
@@ -13,12 +13,12 @@ WIN32 - WINDOWS 32 bit System (Visual Studio 2012)
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
+WINRT - WINDOWS METRO (Visual Studio 2013)
 #### Changes:  
-Added: WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+Added: WINRT - WINDOWS METRO (Visual Studio 2013)  
 Added: Touch Screen Support (Both Mobile Devices and Desktop support)  
 Added: Accelerometer  
 Added: Joystick buttons  
@@ -68,10 +68,10 @@ Fixed: added IDLE sound increase while character is closer to object
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)
+WINRT - WINDOWS METRO (Visual Studio 2013)
 #### Changes:  
 Updated: iOS Admob SDK to 7.2.2  
 Fixed: text/label misalign (old files need to refresh font)  
@@ -84,10 +84,10 @@ Fixed: various issues with sound not playing
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+WINRT - WINDOWS METRO (Visual Studio 2013)  
 #### Changes:  
 Updated: AdMob information  
 Added: More scenes with enemies more spread out  
@@ -98,10 +98,10 @@ Removed: Clean-up of unused assets
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+WINRT - WINDOWS METRO (Visual Studio 2013)  
 #### Changes:  
 Fixed: Missing sound files that gotten deleted by mistake when cleaning up unused resources  
 Fixed: Misc changes and bug fixes  
@@ -110,10 +110,10 @@ Fixed: Misc changes and bug fixes
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+WINRT - WINDOWS METRO (Visual Studio 2013)  
 #### Changes:  
 Added: New Scoring System for distance travelled.  
 Added: Missing Version 0.0.5 changes to the Change log  
@@ -131,10 +131,10 @@ Modified: Increased Population of enemies in each scene.
 #### Supported Devices:  
 AMAZON (Eclipse IDE)  
 ANDROID (Eclipse IDE)  
-IOS {[Mobile Devices]} (XCODE IDE)  
+IOS (XCODE IDE)  
 OSX - MAC OS X (XCODE IDE)  
 WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
-WINRT - WINDOWS METRO {[Mobile Devices]} (Visual Studio 2013)  
+WINRT - WINDOWS METRO (Visual Studio 2013)  
 #### Changes: 
 Added: New Graphic for the Joystick  
 Added: New Graphic for the Fire Button.  
@@ -153,5 +153,18 @@ Removed: Clean up of unused objects to reduce size of the game from all platform
 Removed: Clean up of unused code to reduce size of the game from all platforms  
 Removed: Clean up of unused Advertisement SDKs from all platforms  
   
+### Version 0.0.8  
+#### Supported Devices:  
+AMAZON (Eclipse IDE)  
+ANDROID (Eclipse IDE)  
+IOS (XCODE IDE)  
+OSX - MAC OS X (XCODE IDE)  
+WIN32 - WINDOWS 32 bit System (Visual Studio 2013)  
+WINRT - WINDOWS METRO (Visual Studio 2013)  
+#### Changes:  
+Added: NEW Checkpoint Graphic  
+Added: NEW Stage Complete Graphic  
+Added: Checkpoints every 5 scenes  
+Modified: Scene Size from 1200 to 1400 for all scenes  
+Modified: Fixed some issues with continue from checkpoint was nearly impossible continue by spacing the enemies further away after each check point.
   
-[Mobile Devices]:http://en.wikipedia.org/wiki/Mobile_device

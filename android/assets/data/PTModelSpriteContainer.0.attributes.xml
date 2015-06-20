@@ -466,6 +466,61 @@
                     <string>shadedDark14</string>
                 </dict>
             </dict>
+            <dict>
+                <key>id</key>
+                <string>8399</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Stage Complete</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8407</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Stage Complete</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8419</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Stage Complete</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8430</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Stage Complete</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8438</string>
+                <key>className</key>
+                <string>PTModelSpriteContainer</string>
+                <key>Name</key>
+                <dict>
+                    <key>value</key>
+                    <string>Check Point</string>
+                </dict>
+            </dict>
         </array>
     </dict>
 </plist>

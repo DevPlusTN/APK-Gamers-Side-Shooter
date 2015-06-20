@@ -16,11 +16,30 @@
             </dict>
             <dict>
                 <key>id</key>
-                <string>3736</string>
+                <string>8421</string>
                 <key>Idle Animation</key>
                 <dict>
                     <key>value</key>
-                    <string>3738</string>
+                    <string>8423</string>
+                </dict>
+                <key>Start Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>8434</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>id</key>
+                <string>8440</string>
+                <key>Idle Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>8442</string>
+                </dict>
+                <key>Start Animation</key>
+                <dict>
+                    <key>value</key>
+                    <string>8453</string>
                 </dict>
             </dict>
         </array>
